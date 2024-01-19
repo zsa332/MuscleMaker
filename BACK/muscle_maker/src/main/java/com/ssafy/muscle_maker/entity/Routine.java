@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.*;
 
 import java.sql.Timestamp;
+import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "Routine")
@@ -21,5 +22,8 @@ public class Routine extends BaseTime {
 
     private String title;
 
+    private LocalDateTime date;
+
+    private String which_day;
 
 }
