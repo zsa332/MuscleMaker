@@ -1,9 +1,9 @@
 package com.ssafy.muscle_maker.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.*;
+
+import java.util.List;
 
 @Entity
 @Table(name = "Basket")
@@ -14,8 +14,15 @@ import lombok.*;
 @NoArgsConstructor
 public class Basket {
 
-
     @Id
+    @Column(name = "basket_id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long basket_id;
+
+    @OneToOne(mappedBy = "basket")
+    private User user;
+
+    @OneToMany(mappedBy = "basket")
+    private List<Exercise> exercises;
 
 }
