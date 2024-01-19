@@ -1,29 +1,3 @@
-package com.ssafy.muscle_maker.entity;
-
-import jakarta.persistence.*;
-import lombok.*;
-
-import java.sql.Timestamp;
-import java.time.LocalDateTime;
-
-@Entity
-@Table(name = "Routine")
-@Getter
-@Setter
-@Builder
-@AllArgsConstructor
-@NoArgsConstructor
-public class Routine extends BaseTime {
-
-    @Id
-    @Column(name = "routine_id")
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long routine_id;
-
-    private String title;
-
-    private LocalDateTime date;
-
-    private String which_day;
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:6eb03511abfd869cea81784c1b67edeeafc394a9e631d5e89ddea92a761145e4
+size 678
