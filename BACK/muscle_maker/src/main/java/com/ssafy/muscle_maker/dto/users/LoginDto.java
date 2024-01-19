@@ -1,4 +1,4 @@
-package com.ssafy.muscle_maker.dto;
+package com.ssafy.muscle_maker.dto.users;
 
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
