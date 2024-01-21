@@ -1,15 +1,17 @@
 package com.ssafy.muscle_maker.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import lombok.Getter;
+import jakarta.persistence.*;
+import lombok.*;
 
 @Entity
+@NoArgsConstructor
 @Getter
+@ToString
+@AllArgsConstructor
+@Builder
 public class Tag {
-    @Id @ GeneratedValue
+    @Id
+    @GeneratedValue( strategy = GenerationType.IDENTITY)
     @Column(name = "tag_id")
     Long id;
 

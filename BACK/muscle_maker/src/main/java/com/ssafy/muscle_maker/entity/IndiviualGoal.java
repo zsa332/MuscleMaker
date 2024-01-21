@@ -1,20 +1,27 @@
 package com.ssafy.muscle_maker.entity;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import lombok.Getter;
+import jakarta.persistence.*;
+import lombok.*;
+import org.springframework.data.util.Lazy;
 
 @Entity
 @Getter
+@ToString
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class IndiviualGoal {
 
     @Id
-    @GeneratedValue
-    Long indiviualgoalId;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long individualGoalId;
 
-    Long kg;
-    Long muscle;
-    Long fat;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "user_id" )
+    private Long id;
 
+
+    private Double kg;
+    private Double muscle;
+    private Double fat;
 
 }
