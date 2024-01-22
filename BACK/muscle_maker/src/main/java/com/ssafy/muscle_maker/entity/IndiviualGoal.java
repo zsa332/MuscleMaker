@@ -6,18 +6,16 @@ import org.springframework.data.util.Lazy;
 @Entity
 @Getter
 @ToString
-@Builder
-@NoArgsConstructor
-@AllArgsConstructor
 public class IndiviualGoal {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "indiviualgoal_id")
     private Long individualGoalId;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id" )
-    private Long id;
+    private User user;
 
 
     private Double kg;
