@@ -1,28 +1,3 @@
-package com.ssafy.muscle_maker.entity;
-
-import jakarta.persistence.*;
-import lombok.*;
-
-@Entity
-@Getter
-@Setter
-@Builder
-@Table(name = "feed_comment")
-@AllArgsConstructor
-@NoArgsConstructor
-public class Comment extends BaseTime {
-    @Id
-    @Column(name = "comment_id")
-    @GeneratedValue
-    private Long commentId;
-
-    private String content;
-
-    @ManyToOne
-    @JoinColumn(name = "feed_id")
-    private Feed feed;
-
-    @ManyToOne
-    @JoinColumn(name = "user_id")
-    private User user;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d30be11926050d384baae3791dff25e8622a8ffd904320fe29af94a6ff4c5e88
+size 532

@@ -6,18 +6,17 @@ import lombok.*;
 import java.util.List;
 
 @Entity
-@Table(name = "Basket")
+@Table(name = "basket")
 @Getter
-@Setter
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class Basket {
+public class Basket extends BaseTime {
 
     @Id
     @Column(name = "basket_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long basket_id;
+    private Long basketId;
 
     @OneToOne(mappedBy = "basket")
     private User user;
