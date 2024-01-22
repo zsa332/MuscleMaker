@@ -17,7 +17,7 @@ public class Basket {
     @Id
     @Column(name = "basket_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long basketId;
+    private Long basket_id;
 
     @OneToOne(mappedBy = "basket")
     private User user;

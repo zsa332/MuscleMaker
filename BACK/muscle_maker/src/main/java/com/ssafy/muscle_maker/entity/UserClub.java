@@ -1,30 +1,3 @@
-package com.ssafy.muscle_maker.entity;
-
-import jakarta.persistence.*;
-import lombok.*;
-
-import java.util.List;
-
-@Entity
-@Table(name = "UserClub")
-@Getter
-@Setter
-@Builder
-@AllArgsConstructor
-@NoArgsConstructor
-public class UserClub {
-    @Id
-    @Column(name = "user_club_id")
-    private Long userClubId;
-
-    @ManyToOne
-    @JoinColumn(name = "user_id")
-    private User user;
-
-    @ManyToOne
-    @JoinColumn(name = "club_id")
-    private Club club;
-
-    @Column(name="authority")
-    private int authority;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ee331a1ab605fb1ac9aaac4404112765b58069a70f75331f2f22020ab887d3b3
+size 668

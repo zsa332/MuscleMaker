@@ -1,27 +1,3 @@
-package com.ssafy.muscle_maker.entity;
-
-import jakarta.persistence.*;
-import lombok.*;
-
-import java.util.Date;
-
-@Entity
-@Getter
-@Setter
-@Builder
-@AllArgsConstructor
-@NoArgsConstructor
-public class GoalAchieve {
-    @Id
-    @Column(name = "goal_achieve_id")
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long goalAchieveId;
-
-    @Column(name = "date")
-    private Date date;
-
-    @Column(name ="achieve_percent")
-    private int achieve_percent;
-
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:bb0c0d458d398532af04cd5b7d9211a22eef9e6826de34f7459581a75eebc410
+size 544
