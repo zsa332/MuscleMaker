@@ -1,20 +1,25 @@
 package com.ssafy.muscle_maker.entity;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.Getter;
 
 @Entity
 @Getter
+@Table(name = "indiviualgoals")
 public class IndiviualGoal {
 
     @Id
-    @GeneratedValue
-    Long indiviualgoalId;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "indiviualgoal_id")
+    private Long individualGoalId;
 
-    Long kg;
-    Long muscle;
-    Long fat;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "user_id" )
+    private User user;
+
+
+    private Double kg;
+    private Double muscle;
+    private Double fat;
 
 
 }
