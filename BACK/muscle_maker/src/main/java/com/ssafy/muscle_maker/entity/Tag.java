@@ -1,11 +1,13 @@
 package com.ssafy.muscle_maker.entity;
 
 import jakarta.persistence.*;
+import lombok.Builder;
 import lombok.Getter;
 
 @Entity
 @Getter
 @Table(name = "tag")
+@Builder
 public class Tag {
 
     @Id @ GeneratedValue
