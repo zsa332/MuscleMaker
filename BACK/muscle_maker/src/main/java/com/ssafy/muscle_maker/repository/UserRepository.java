@@ -1,15 +1,3 @@
-package com.ssafy.muscle_maker.repository;
-
-
-import com.ssafy.muscle_maker.entity.User;
-import org.springframework.data.jpa.repository.EntityGraph;
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
-import java.util.Optional;
-
-@Repository
-public interface UserRepository extends JpaRepository<User, Long> {
-    @EntityGraph(attributePaths = "authorities")
-    Optional<User> findOneWithAuthoritiesByEmailId(String emailId);
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:49796f096d38d5c53bf9f24118d5d0d50a10bf9cc84a4ed94f1d8191c825e538
+size 650
