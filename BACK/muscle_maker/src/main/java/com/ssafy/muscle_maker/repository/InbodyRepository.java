@@ -11,6 +11,4 @@ import java.util.List;
 @Repository
 public interface InbodyRepository extends JpaRepository<Inbody, Long> {
 
-    List<Inbody> findAllByUser(User user);
-
 }
