@@ -1,19 +1,10 @@
 package com.ssafy.muscle_maker.repository;
 
-import com.ssafy.muscle_maker.entity.Feed;
+import com.ssafy.muscle_maker.entity.IndiviualGoal;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import java.util.Optional;
-
-
 @Repository
-public interface FeedRepository extends JpaRepository<Feed,Long>  {
+public interface IndiviualGoalRepository  extends JpaRepository<IndiviualGoal,Long> {
 
-
-
-
-
-    }
-
-
+}
