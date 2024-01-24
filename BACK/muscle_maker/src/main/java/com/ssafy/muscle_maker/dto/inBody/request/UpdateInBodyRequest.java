@@ -1,4 +1,4 @@
-package com.ssafy.muscle_maker.dto.inbody.request;
+package com.ssafy.muscle_maker.dto.inBody.request;
 
 import lombok.*;
 
@@ -8,7 +8,7 @@ import lombok.*;
 @ToString
 @Builder
 @Setter
-public class UpdateInbodyRequest {
+public class UpdateInBodyRequest {
 
     private Float weight;
     private Float muscleMass;

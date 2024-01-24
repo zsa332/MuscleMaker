@@ -9,7 +9,6 @@ import java.util.List;
 
 @Repository
 public interface CommentRepository extends JpaRepository<Comment, Long> {
-
     Comment findByCommentId(Long commentId);
     List<Comment> findByFeedAndFlagFalse(Feed feed);
 }

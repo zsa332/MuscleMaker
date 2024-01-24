@@ -1,6 +1,6 @@
 package com.ssafy.muscle_maker.repository;
 
-import com.ssafy.muscle_maker.entity.IndiviualGoal;
+import com.ssafy.muscle_maker.entity.IndividualGoal;
 import com.ssafy.muscle_maker.entity.Routine;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

@@ -1,4 +1,4 @@
-package com.ssafy.muscle_maker.dto.inbody.response;
+package com.ssafy.muscle_maker.dto.inBody.response;
 
 import lombok.*;
 
@@ -9,9 +9,9 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @ToString
 @Builder
-public class FindInbodyResponse {
+public class FindInBodyResponse {
 
-    private Long inbodyId;
+    private Long inBodyId;
     private Float weight;
     private Float muscleMass;
     private Float fatMass;

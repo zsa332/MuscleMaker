@@ -1,15 +1,13 @@
-package com.ssafy.muscle_maker.dto.inbody.request;
+package com.ssafy.muscle_maker.dto.inBody.request;
 
 import lombok.*;
-
-import java.time.LocalDateTime;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
 @Builder
-public class CreateInbodyRequest {
+public class CreateInBodyRequest {
 
     private Float weight;
     private Float muscleMass;

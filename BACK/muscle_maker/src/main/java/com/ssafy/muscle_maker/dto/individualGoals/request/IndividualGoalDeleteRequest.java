@@ -1,4 +1,4 @@
-package com.ssafy.muscle_maker.dto.indiviualgoals.request;
+package com.ssafy.muscle_maker.dto.individualGoals.request;
 
 import lombok.*;
 
@@ -7,7 +7,7 @@ import lombok.*;
 @NoArgsConstructor
 @ToString
 @Builder
-public class IndiviualgoalDeleteRequest {
+public class IndividualGoalDeleteRequest {
 
     private  String Authorization;
     private Long individualGoalId;
