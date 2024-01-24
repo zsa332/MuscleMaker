@@ -1,14 +1,3 @@
-package com.ssafy.muscle_maker.repository;
-
-import com.ssafy.muscle_maker.entity.GoalAchieve;
-import com.ssafy.muscle_maker.entity.UserClub;
-import org.springframework.data.jpa.repository.EntityGraph;
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
-
-import java.util.List;
-
-@Repository
-public interface UserClubRepository extends JpaRepository<UserClub, Long> {
-    List<GoalAchieve> findAllByUserClubIdAndFlagFalse(Long user_club_id);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:425c2ac8cacdc184c4594bad096adb33146be4b626df0fe40da0d71f9af3cb4a
+size 664
