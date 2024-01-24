@@ -12,7 +12,7 @@ public class IndiviualgoalUpdateRequest {
 
 
     private Long individualGoalId; // 개인목표 기본키 번호
-    private  Long Id;
+    private Long userId;
     private double kg;
     private double muscle;
     private double fat;

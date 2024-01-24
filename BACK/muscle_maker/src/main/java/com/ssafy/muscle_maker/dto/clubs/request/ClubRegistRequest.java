@@ -1,12 +1,11 @@
-package com.ssafy.muscle_maker.dto.clubs;
+package com.ssafy.muscle_maker.dto.clubs.request;
 
-import jakarta.persistence.Entity;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 @AllArgsConstructor
 @Getter
-public class ClubRegistDto {
+public class ClubRegistRequest {
 
     private String title;
     private boolean category;
