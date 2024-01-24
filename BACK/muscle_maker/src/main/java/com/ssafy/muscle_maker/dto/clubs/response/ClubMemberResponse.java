@@ -1,4 +1,4 @@
-package com.ssafy.muscle_maker.dto.clubs;
+package com.ssafy.muscle_maker.dto.clubs.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -7,7 +7,7 @@ import lombok.Getter;
 @AllArgsConstructor
 @Getter
 @Builder
-public class ClubMemberDto {
+public class ClubMemberResponse {
     long userId;
     String nickname;
     String image;
