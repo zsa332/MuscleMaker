@@ -16,5 +16,6 @@ public class FindInBodyResponse {
     private Float muscleMass;
     private Float fatMass;
     private LocalDateTime createdAt;
+    private LocalDateTime modifiedAt;
 
 }
