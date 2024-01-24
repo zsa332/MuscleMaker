@@ -4,6 +4,8 @@ import jakarta.persistence.*;
 import lombok.Builder;
 import lombok.Getter;
 
+import java.util.List;
+
 @Entity
 @Getter
 @Table(name = "tag")
@@ -16,6 +18,9 @@ public class Tag {
 
     @Column(unique = true)
     private String tag;
+
+    @OneToMany(mappedBy = "tag", cascade = CascadeType.ALL)
+    private List<FeedTag> feedTags;
 
 
 }
