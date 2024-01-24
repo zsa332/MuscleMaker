@@ -5,7 +5,7 @@ import lombok.Getter;
 
 @AllArgsConstructor
 @Getter
-public class ClubApplyRegist {
-    long clubId;
-    long userId;
+public class ClubLeaderRequest {
+    long leaderId;
+    long memberId;
 }
