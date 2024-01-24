@@ -1,4 +1,4 @@
-package com.ssafy.muscle_maker.dto.indiviualgoals.request;
+package com.ssafy.muscle_maker.dto.individualGoals.request;
 
 
 import lombok.*;
@@ -8,7 +8,7 @@ import lombok.*;
 @NoArgsConstructor
 @ToString
 @Builder
-public class IndiviualgoalUpdateRequest {
+public class IndividualGoalUpdateRequest {
 
 
     private Long individualGoalId; // 개인목표 기본키 번호

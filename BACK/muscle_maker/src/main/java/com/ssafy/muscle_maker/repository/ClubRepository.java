@@ -8,13 +8,6 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 @Repository
 public interface ClubRepository extends JpaRepository<Club, Long> {
-
-
     //club 기본 정보 조회
     Club findClubByClubIdAndFlagFalse(Long club_id);
-
-
-
-
-
 }
