@@ -10,7 +10,7 @@ import lombok.*;
 @Builder
 public class IndiviualgoalWriteRequest {
 
-    private  Long Id;
+    private  Long userId;
     private double kg;
     private double muscle;
     private double fat;

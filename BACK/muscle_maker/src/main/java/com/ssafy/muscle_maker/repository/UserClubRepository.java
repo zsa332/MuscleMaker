@@ -10,5 +10,5 @@ import java.util.List;
 
 @Repository
 public interface UserClubRepository extends JpaRepository<UserClub, Long> {
-    List<GoalAchieve> findAllByUserClubId(Long user_club_id);
+    List<GoalAchieve> findAllByUserClubIdAndFlagFalse(Long user_club_id);
 }
