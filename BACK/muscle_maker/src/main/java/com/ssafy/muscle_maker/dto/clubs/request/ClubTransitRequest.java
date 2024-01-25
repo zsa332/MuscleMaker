@@ -1,13 +1,12 @@
 package com.ssafy.muscle_maker.dto.clubs.request;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.Getter;
+import lombok.*;
 
-@Data
-@AllArgsConstructor
 @Getter
+@Setter
+@AllArgsConstructor
+@Builder
 public class ClubTransitRequest {
-    long clubId;
-    long userId;
+    private long clubId;
+    private long userId;
 }
