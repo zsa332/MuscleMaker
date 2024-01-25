@@ -7,7 +7,6 @@ import lombok.*;
 @Builder
 @Setter
 public class UpdateInBodyRequest {
-
     private Float weight;
     private Float muscleMass;
     private Float fatMass;

@@ -1,10 +1,11 @@
 package com.ssafy.muscle_maker.dto.clubs.request;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
+import lombok.*;
 
-@AllArgsConstructor
 @Getter
+@Setter
+@AllArgsConstructor
+@Builder
 public class ClubRegistRequest {
 
     private String title;
