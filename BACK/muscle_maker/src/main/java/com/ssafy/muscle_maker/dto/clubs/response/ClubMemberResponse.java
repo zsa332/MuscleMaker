@@ -1,17 +1,16 @@
 package com.ssafy.muscle_maker.dto.clubs.response;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
+import lombok.*;
 
-@AllArgsConstructor
 @Getter
+@Setter
+@AllArgsConstructor
 @Builder
 public class ClubMemberResponse {
-    long userId;
-    String nickname;
-    String image;
+    private long userId;
+    private String nickname;
+    private  String image;
 
-    int completionPercent;
-    boolean completionToday;
+    private int completionPercent;
+    private boolean completionToday;
 }
