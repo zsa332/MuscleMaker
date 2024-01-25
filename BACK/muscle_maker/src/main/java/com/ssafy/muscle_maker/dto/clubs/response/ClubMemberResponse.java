@@ -2,8 +2,10 @@ package com.ssafy.muscle_maker.dto.clubs.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
+import lombok.Data;
 import lombok.Getter;
 
+@Data
 @AllArgsConstructor
 @Getter
 @Builder
