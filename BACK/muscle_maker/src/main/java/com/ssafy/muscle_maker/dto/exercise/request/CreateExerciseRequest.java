@@ -4,8 +4,6 @@ import lombok.*;
 
 @Data
 @AllArgsConstructor
-@NoArgsConstructor
-@ToString
 @Builder
 @Setter
 public class CreateExerciseRequest {

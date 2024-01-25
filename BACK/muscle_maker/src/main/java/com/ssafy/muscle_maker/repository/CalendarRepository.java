@@ -11,4 +11,5 @@ public interface CalendarRepository extends JpaRepository<Calendar, Long> {
     List<Calendar> findCalendarByClubAndFlagFalse(Club club);
 
     Calendar findCalendarByDateAndClubAndFlagFalse(LocalDate date, Club club);
+
 }
