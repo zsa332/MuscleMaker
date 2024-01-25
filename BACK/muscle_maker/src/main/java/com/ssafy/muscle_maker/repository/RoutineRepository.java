@@ -1,15 +1,3 @@
-package com.ssafy.muscle_maker.repository;
-
-import com.ssafy.muscle_maker.entity.IndividualGoal;
-import com.ssafy.muscle_maker.entity.Routine;
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
-
-import java.time.LocalDate;
-import java.util.List;
-
-@Repository
-public interface RoutineRepository extends JpaRepository<Routine, Long>{
-    Routine findByRoutineIdAndDate(Long routineId, LocalDate date);
-    Routine findByDate(LocalDate date);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:825402f086f358f16e3e5ff2b8ec6a199162cc25e19c56a0f958c3d02534ceed
+size 735

@@ -6,7 +6,6 @@ import java.time.LocalDateTime;
 
 @Data
 @AllArgsConstructor
-@NoArgsConstructor
 @Builder
 public class FindInBodyResponse {
 
@@ -15,5 +14,6 @@ public class FindInBodyResponse {
     private Float muscleMass;
     private Float fatMass;
     private LocalDateTime createdAt;
+    private LocalDateTime modifiedAt;
 
 }
