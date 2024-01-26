@@ -1,4 +1,4 @@
-package com.ssafy.muscle_maker.dto.follow;
+package com.ssafy.muscle_maker.dto.follow.request;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
