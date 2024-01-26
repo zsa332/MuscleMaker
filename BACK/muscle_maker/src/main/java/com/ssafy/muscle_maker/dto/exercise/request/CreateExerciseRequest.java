@@ -2,10 +2,10 @@ package com.ssafy.muscle_maker.dto.exercise.request;
 
 import lombok.*;
 
-@Data
 @AllArgsConstructor
 @Builder
 @Setter
+@Getter
 public class CreateExerciseRequest {
 
     private String name; // 운동 명

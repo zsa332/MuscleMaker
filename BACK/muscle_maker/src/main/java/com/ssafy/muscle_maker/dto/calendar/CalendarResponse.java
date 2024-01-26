@@ -5,8 +5,7 @@ import lombok.*;
 import java.time.LocalDate;
 
 
-@Getter
-@Setter
+@Data
 @AllArgsConstructor
 @Builder
 public class CalendarResponse {
