@@ -2,10 +2,10 @@ package com.ssafy.muscle_maker.dto.exercise.response;
 
 import lombok.*;
 
-@Data
 @AllArgsConstructor
 @Builder
 @Setter
+@Getter
 public class ExerciseResponse {
 
     private Long exerciseId;

@@ -6,6 +6,7 @@ import java.time.LocalDate;
 
 
 @Data
+@Setter
 @AllArgsConstructor
 @Builder
 public class CalendarResponse {
