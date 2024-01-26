@@ -1,27 +1,3 @@
-package com.ssafy.muscle_maker.entity;
-import jakarta.persistence.*;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
-
-@Entity
-@Getter
-@Setter
-@Table(name = "feed_tag")
-@Builder
-public class FeedTag  {
-
-    @Id @GeneratedValue
-    @Column(name = "feed_tag_id")
-    private Long feedTagId;
-
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "feed_id")
-    private Feed feed;
-
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "tag_id")
-    private Tag tag;
-
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a1ad2afebcfbad2795a7c14ee823ed52263111a4e7872cd2bf60ee6219f3cced
+size 523
