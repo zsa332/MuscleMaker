@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7e77932b6d8c01c261e711dc47686f9326fb7d074d7e2e17b4ee6d89d2f1e8e1
-size 518
+package com.ssafy.muscle_maker.repository;
+
+import com.ssafy.muscle_maker.entity.Club;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import java.util.List;
+import java.util.Optional;
+
+@Repository
+public interface ClubRepository extends JpaRepository<Club, Long> {
+    //club 기본 정보 조회
+    Optional<Club> findClubByClubIdAndFlagFalse(Long club_id);
+
+    List<Club> findAll();
+}
