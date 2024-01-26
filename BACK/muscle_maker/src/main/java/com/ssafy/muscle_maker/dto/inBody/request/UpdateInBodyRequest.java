@@ -5,6 +5,7 @@ import lombok.*;
 @Data
 @AllArgsConstructor
 @Builder
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Setter
 public class UpdateInBodyRequest {
     private Float weight;
