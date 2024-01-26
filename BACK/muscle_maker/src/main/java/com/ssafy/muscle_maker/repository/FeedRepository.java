@@ -11,6 +11,8 @@ import java.util.Optional;
 @Repository
 public interface FeedRepository extends JpaRepository<Feed,Long>  {
     Feed findByFeedId(Long feedId);
+
+    Optional<List<Feed>> findByVisibility(int visibility);
     List<Feed> findByFeedIdIn(List<Long> feedIds);
 }
 
