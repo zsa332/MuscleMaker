@@ -12,7 +12,7 @@ import java.util.Optional;
 public interface FeedRepository extends JpaRepository<Feed,Long>  {
     Feed findByFeedId(Long feedId);
 
-    Optional<List<Feed>> findByVisibility(int visibility);
+    Optional<List<Feed>> findByVisibilityAndFlagFalse(int visibility);
     List<Feed> findByFeedIdIn(List<Long> feedIds);
 }
 
