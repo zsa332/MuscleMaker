@@ -1,19 +1,3 @@
-package com.ssafy.muscle_maker.repository;
-
-import com.ssafy.muscle_maker.entity.Feed;
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
-
-import java.util.List;
-import java.util.Optional;
-
-
-@Repository
-public interface FeedRepository extends JpaRepository<Feed,Long>  {
-    Feed findByFeedId(Long feedId);
-
-    Optional<List<Feed>> findByVisibilityAndFlagFalse(int visibility);
-    List<Feed> findByFeedIdIn(List<Long> feedIds);
-}
-
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:1e863c23deebac4a4ef57294eae18d8ea7dacec9f71e91f6228c03d3918002bf
+size 626
