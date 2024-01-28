@@ -13,4 +13,6 @@ public interface ClubRepository extends JpaRepository<Club, Long> {
     Optional<Club> findClubByClubIdAndFlagFalse(Long club_id);
 
     List<Club> findAll();
+
+    boolean existsByTitleContaining(String title);
 }
