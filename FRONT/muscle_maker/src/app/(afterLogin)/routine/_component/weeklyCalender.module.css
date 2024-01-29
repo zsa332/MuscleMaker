@@ -1,0 +1,23 @@
+.top {
+  margin-top: auto;
+}
+
+.weeklyCalendar {
+  text-align: center;
+}
+
+.daysContainer {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.day {
+  width: 50px; /* 날짜 간격을 조절하려면 적절한 너비를 설정하세요 */
+  padding: 10px;
+}
+
+.today {
+  color: red;
+}
