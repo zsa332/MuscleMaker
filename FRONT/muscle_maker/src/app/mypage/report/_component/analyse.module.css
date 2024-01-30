@@ -1,0 +1,18 @@
+.main {
+  margin-top: 20px;
+  width: 900px;
+  height: 350px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.table {
+}
+
+.heart {
+  fill: rgb(220, 20, 10, 0.7);
+}
