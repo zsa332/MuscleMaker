@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface CommentRepository extends JpaRepository<Comment, Long> {
-    Comment findByCommentId(Long commentId);
+public interface CommentRepository extends JpaRepository<Comment, Integer> {
+    Comment findByCommentId(int commentId);
     List<Comment> findByFeedAndFlagFalse(Feed feed);
 }

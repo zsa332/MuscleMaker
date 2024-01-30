@@ -7,7 +7,7 @@ import lombok.*;
 @AllArgsConstructor
 @Builder
 public class ClubMemberResponse {
-    private long userId;
+    private int userId;
     private String nickname;
     private  String image;
 

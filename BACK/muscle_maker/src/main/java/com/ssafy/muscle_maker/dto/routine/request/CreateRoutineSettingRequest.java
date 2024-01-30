@@ -10,6 +10,6 @@ import java.time.LocalDateTime;
 public class CreateRoutineSettingRequest {
 
     private String title;
-    private Long whichDay; // 0 월, 1 화, 2 수, 3 목 ...
+    private int whichDay; // 0 월, 1 화, 2 수, 3 목 ...
 
 }

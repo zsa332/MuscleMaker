@@ -7,8 +7,8 @@ import lombok.*;
 @Builder
 public class CreateInBodyRequest {
 
-    private Float weight;
-    private Float muscleMass;
-    private Float fatMass;
+    private Double weight;
+    private Double muscleMass;
+    private Double fatMass;
 
 }
