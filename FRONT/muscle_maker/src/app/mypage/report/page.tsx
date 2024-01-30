@@ -1,16 +1,3 @@
-import ReportTab from "@/app/mypage/report/_component/ReportTab";
-import TopProfile from "@/app/(afterLogin)/_component/TopProfile";
-import style from "./report.module.css";
-import Analyse from "@/app/mypage/report/_component/Analyse";
-
-export default function Report() {
-  return (
-    <div>
-      <TopProfile />
-      <ReportTab />
-      <div className={style.main}>
-        <Analyse />
-      </div>
-    </div>
-  );
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ac11df7be6466a41af41e320dedcc051208c564f89b370e9265e64883d63a0cb
+size 1416
