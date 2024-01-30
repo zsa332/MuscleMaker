@@ -1,7 +1,23 @@
 .main {
-  height: 6000px;
-  background-color: gray;
+  height: 2300px;
+  background-color: rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.chartCover {
+  background-color: #ffffff;
+  width: 900px;
+  height: 600px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.weightChart {
+  background-color: #ffffff;
+  width: 830px;
 }
