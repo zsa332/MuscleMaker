@@ -3,7 +3,7 @@
 import { createContext, useState, ReactNode } from "react";
 
 export const TabContext = createContext({
-  tab: "rec",
+  tab: "diet",
   setTab: (value: "diet" | "exercise" | "all") => {},
 });
 

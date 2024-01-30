@@ -1,0 +1,7 @@
+.main {
+  height: 6000px;
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

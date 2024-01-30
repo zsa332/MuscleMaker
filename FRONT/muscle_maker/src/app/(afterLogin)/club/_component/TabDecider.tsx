@@ -11,7 +11,11 @@ import CircleChart from "./CircleChart";
 export default function TabDecider() {
   const { tab } = useContext(TabContext);
   if (tab === "home") {
-    return <CircleChart/>
+    return (
+      <>
+      <CircleChart/>
+      </>
+    )
   }
   else if (tab === 'mem') {
     return <MemberPage />;
