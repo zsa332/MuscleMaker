@@ -12,6 +12,7 @@ import lombok.Setter;
 public class UserInfoRequest {
     private String nickname;
 
+    private Boolean gender;
 
     private String name;
 
