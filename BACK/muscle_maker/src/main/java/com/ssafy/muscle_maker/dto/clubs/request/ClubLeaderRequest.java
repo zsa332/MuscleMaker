@@ -7,6 +7,6 @@ import lombok.*;
 @AllArgsConstructor
 @Builder
 public class ClubLeaderRequest {
-    private long leaderId;
-    private long memberId;
+    private int leaderId;
+    private int memberId;
 }

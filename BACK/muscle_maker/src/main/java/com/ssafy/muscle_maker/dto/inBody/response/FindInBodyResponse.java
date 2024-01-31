@@ -9,10 +9,10 @@ import java.time.LocalDateTime;
 @Builder
 public class FindInBodyResponse {
 
-    private Long inBodyId;
-    private Float weight;
-    private Float muscleMass;
-    private Float fatMass;
+    private int inBodyId;
+    private Double weight;
+    private double muscleMass;
+    private double fatMass;
     private LocalDateTime createdAt;
     private LocalDateTime modifiedAt;
 
