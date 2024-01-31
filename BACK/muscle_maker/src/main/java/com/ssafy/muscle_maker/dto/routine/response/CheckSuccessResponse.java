@@ -8,6 +8,6 @@ import lombok.Data;
 @AllArgsConstructor
 @Builder
 public class CheckSuccessResponse {
-    private Long exerciseId;
+    private int exerciseId;
     private boolean success;
 }

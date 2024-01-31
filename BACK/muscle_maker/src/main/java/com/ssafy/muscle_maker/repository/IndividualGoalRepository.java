@@ -5,7 +5,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface IndividualGoalRepository extends JpaRepository<IndividualGoal,Long> {
+public interface IndividualGoalRepository extends JpaRepository<IndividualGoal,Integer> {
 
 
 }

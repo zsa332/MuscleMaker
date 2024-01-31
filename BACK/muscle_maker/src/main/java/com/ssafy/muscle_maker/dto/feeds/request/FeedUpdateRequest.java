@@ -14,9 +14,9 @@ public class FeedUpdateRequest {
 
     private  String Authorizaiton;
     private String content;
-    private Long feedId;
-    private Long  clubId ;
-    private Long userId;
+    private int feedId;
+    private int  clubId ;
+    private int userId;
     private int visibility;
     private String imgName;
     private List<String> tags;
