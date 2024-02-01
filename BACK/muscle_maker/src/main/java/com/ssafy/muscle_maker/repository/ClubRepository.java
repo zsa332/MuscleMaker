@@ -1,18 +1,3 @@
-package com.ssafy.muscle_maker.repository;
-
-import com.ssafy.muscle_maker.entity.Club;
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
-
-import java.util.List;
-import java.util.Optional;
-
-@Repository
-public interface ClubRepository extends JpaRepository<Club, Integer> {
-    //club 기본 정보 조회
-    Optional<Club> findClubByClubIdAndFlagFalse(int club_id);
-
-    List<Club> findAll();
-
-    boolean existsByTitleContaining(String title);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:fa8adfc9ec74b614a0abbeb2b0dd239935252380b2cd6b47ec44332c1fb552d1
+size 603
