@@ -10,5 +10,5 @@ import lombok.*;
 @Builder
 public class FeedDeleteRequest {
     private  String Authorization;
-    private  Long feedId;
+    private  int feedId;
 }
