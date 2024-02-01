@@ -5,7 +5,7 @@ import { TabContext } from "./TabProvider";
 import MonthCalendar from "./MonthCalendar";
 import dayjs from "dayjs";
 import style from './tab.module.css'
-import WeeklyComponent from "./ExerciseList";
+import WeeklyComponent from "./WeeklyCalendar";
 
 
 
