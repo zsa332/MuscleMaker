@@ -10,5 +10,5 @@ import lombok.*;
 public class IndividualGoalDeleteRequest {
 
     private  String Authorization;
-    private Long individualGoalId;
+    private int individualGoalId;
 }

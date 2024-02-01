@@ -15,7 +15,7 @@ public class CreateRoutineRequest {
 
     private LocalDateTime date;
 
-    private Long whichDay; // 0 월, 1 화, 2 수, 3 목 ...
+    private int whichDay; // 0 월, 1 화, 2 수, 3 목 ...
 
     private Boolean settings;
 

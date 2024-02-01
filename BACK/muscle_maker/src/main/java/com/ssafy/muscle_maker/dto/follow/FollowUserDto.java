@@ -6,6 +6,6 @@ import lombok.*;
 @AllArgsConstructor
 @Builder
 public class FollowUserDto {
-    private long userId;
+    private int userId;
     private String nickname;
 }

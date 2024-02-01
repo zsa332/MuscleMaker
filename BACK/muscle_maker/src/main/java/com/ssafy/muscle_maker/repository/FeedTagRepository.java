@@ -5,6 +5,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface FeedTagRepository extends JpaRepository<FeedTag,Long> {
+public interface FeedTagRepository extends JpaRepository<FeedTag,Integer> {
 
 }

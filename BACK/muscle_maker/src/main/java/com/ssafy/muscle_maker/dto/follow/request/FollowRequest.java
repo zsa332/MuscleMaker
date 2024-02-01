@@ -10,6 +10,6 @@ import lombok.Setter;
 @AllArgsConstructor
 @Builder
 public class FollowRequest {
-    private long followerId;
-    private long followingId;
+    private int followerId;
+    private int followingId;
 }

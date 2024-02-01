@@ -8,9 +8,9 @@ import java.util.List;
 import java.util.Optional;
 
 @Repository
-public interface ClubRepository extends JpaRepository<Club, Long> {
+public interface ClubRepository extends JpaRepository<Club, Integer> {
     //club 기본 정보 조회
-    Optional<Club> findClubByClubIdAndFlagFalse(Long club_id);
+    Optional<Club> findClubByClubIdAndFlagFalse(int club_id);
 
     List<Club> findAll();
 
