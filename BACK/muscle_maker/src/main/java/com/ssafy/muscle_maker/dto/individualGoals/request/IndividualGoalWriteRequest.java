@@ -10,7 +10,7 @@ import lombok.*;
 @Builder
 public class IndividualGoalWriteRequest {
 
-    private  Long userId;
+    private  int userId;
     private double kg;
     private double muscle;
     private double fat;

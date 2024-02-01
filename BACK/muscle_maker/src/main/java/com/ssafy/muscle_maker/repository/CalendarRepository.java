@@ -8,7 +8,7 @@ import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
 
-public interface CalendarRepository extends JpaRepository<Calendar, Long> {
+public interface CalendarRepository extends JpaRepository<Calendar, Integer> {
     Calendar findCalendarByDateAndClubAndFlagFalse(LocalDate date, Club club);
 
 }
