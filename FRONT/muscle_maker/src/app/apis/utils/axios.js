@@ -8,12 +8,12 @@ axios.defaults.withCredentials = true; // 쿠키 데이터를 전송받기 위�
 // basic Instance
 const apiInstance = () => {
   const instance = axios.create({
-    baseURL: process.env.REACT_APP_PORT_GLOBAL,
+    baseURL: 'http://localhost:8080/',
     headers: {
-      Authorization: `Bearer `,
+      // Authorization: `Bearer `, 향후 추가
     },
   });
-  return setInterceptros(instance);
+  return instance;
 };
 
 export default apiInstance;
