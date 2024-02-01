@@ -9,6 +9,7 @@ import java.util.List;
 
 @Repository
 public interface CommentRepository extends JpaRepository<Comment, Integer> {
+    boolean existsByCommentId(int commentId);
     Comment findByCommentId(int commentId);
     List<Comment> findByFeedAndFlagFalse(Feed feed);
 }
