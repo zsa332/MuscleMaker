@@ -16,7 +16,7 @@ public class Tag {
 
     @Id @ GeneratedValue
     @Column(name = "tag_id")
-    private Long tagId;
+    private int tagId;
 
     @Column(unique = true)
     private String tag;

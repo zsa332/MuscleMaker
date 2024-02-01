@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 @Builder
 public class TagDto {
 
-    Long tagId;
+    int tagId;
     String tag;
 
     public Tag toEntity(TagDto tagDto){

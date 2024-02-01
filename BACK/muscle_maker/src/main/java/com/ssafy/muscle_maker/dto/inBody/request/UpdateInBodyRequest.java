@@ -8,8 +8,8 @@ import lombok.*;
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Setter
 public class UpdateInBodyRequest {
-    private Float weight;
-    private Float muscleMass;
-    private Float fatMass;
+    private double weight;
+    private double muscleMass;
+    private double fatMass;
 
 }
