@@ -5,6 +5,7 @@ import lombok.*;
 @Data
 @AllArgsConstructor
 @Builder
+@NoArgsConstructor
 public class CreateInBodyRequest {
 
     private Double weight;
