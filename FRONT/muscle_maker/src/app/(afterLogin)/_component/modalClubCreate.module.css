@@ -1,0 +1,17 @@
+.main {
+  position: fixed;
+  top: 200px;
+  left: 200px;
+  z-index: 3;
+  background-color: #ffffff;
+}
+
+.background {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
