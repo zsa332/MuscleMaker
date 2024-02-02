@@ -8,6 +8,7 @@ const apiInstance = () => {
   const instance = axios.create({
     baseURL: 'http://localhost:8080/',
     headers: {
+      'Content-Type': 'application/json'
       // Authorization: `Bearer `, 향후 추가
     },
   });
