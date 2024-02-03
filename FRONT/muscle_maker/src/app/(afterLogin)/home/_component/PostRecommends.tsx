@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:82602856310c7ab9bdafd81dfc877a8688a7ddcda5ccfadf02f320997ccc6286
-size 1500
+"use client";
+import YourComponent from '../_lib/getPostRecommend';
+import Post from "@/app/(afterLogin)/_component/Post";
+import { ReactNode } from "react";
+
+type Props = { params: any; modal: ReactNode };
+
+const YourContainer: React.FC<Props> = ({ params, modal }) => {
+  return (
+    <div>
+      <h2>Post Recommendations</h2>
+      <YourComponent />
+    </div>
+  );
+};
+
+export default YourContainer;
