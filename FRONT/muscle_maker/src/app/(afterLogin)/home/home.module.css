@@ -1,5 +1,5 @@
 .main {
-  width: 600px;
+  width: 650px;
   border-color: rgb(239, 243, 244);
   border-right-width: 1px;
   border-left-width: 1px;
@@ -9,3 +9,13 @@
   flex-direction: column;
   align-items: stretch;
 }
+
+/* .test {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: gray;
+  z-index: 1;
+} */
