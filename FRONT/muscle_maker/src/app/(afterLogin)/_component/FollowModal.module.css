@@ -1,0 +1,25 @@
+/* FollowModal.module.css */
+
+.modal {
+  display: flex; 
+  position: fixed; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  justify-content: center; 
+  align-items: center; 
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 1000; 
+}
+
+.modalContent {
+  display: flex; 
+  justify-content: center; 
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 40vw; 
+  height: 80vh;
+  overflow-y: auto; /* 세로 스크롤바를 내용이 넘칠 때만 표시 */
+}
