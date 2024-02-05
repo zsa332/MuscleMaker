@@ -11,6 +11,6 @@ import lombok.Setter;
 @AllArgsConstructor
 @Builder
 public class loginDto {
-    private String jwt;
+    private String token;
     private int userId;
 }
