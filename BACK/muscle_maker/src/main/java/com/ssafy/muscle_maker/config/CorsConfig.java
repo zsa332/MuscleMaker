@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:120afdf8f20265fb67ac979072328c5dc2101090830acbca2f5313dcd31aefab
-size 825
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.config.annotation.CorsRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+
+@Configuration
+public class CorsConfig implements WebMvcConfigurer {
+    @Override
+    public void addCorsMappings(CorsRegistry registry) {
+        registry.addMapping("/**").allowedOrigins("*").allowedMethods("*").allowCredentials(false);
+    }
+}
