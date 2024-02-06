@@ -12,6 +12,6 @@ export const follows = {
     cancelFollow : (followerId,followingId) => axios.delete(`follows?
                     followerId=${followerId}&followingId=${followingId}`),
     /** 팔로우 목록 조회*/
-    getFollowList : (userId) => axios.get(`follows?userId=${userId}`),
+    getFollowList : (userId) => axios.get(`follows?userId=${userId}&sortType=0`),
 
 };
