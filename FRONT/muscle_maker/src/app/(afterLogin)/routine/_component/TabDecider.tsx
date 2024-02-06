@@ -2,11 +2,9 @@
 
 import { useContext } from "react";
 import { TabContext } from "./TabProvider";
-import MonthCalendar from "./MonthCalendar";
+import MonthCalendar from "../../_component/MonthCalendar";
 import dayjs from "dayjs";
-import style from './tab.module.css'
-import WeeklyComponent from "./WeeklyCalendar";
-
+import WeeklyComponent from "../../_component/WeeklyCalendar";
 
 
 const today = dayjs().format('YYYY-MM-DD'); 
