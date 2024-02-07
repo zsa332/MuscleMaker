@@ -18,4 +18,7 @@ const apiInstance = () => {
   return instance;
 };
 
-export default apiInstance;
+
+
+
+export default apiInstance ;
