@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7472e878f86c31595bea263ea16c3cf4386dbc9c45a2f0337c86f4c30adcea6f
-size 631
+import React from 'react';
+import Tab from './_component/Tab';
+import style from './routine.module.css';
+import TabProvider from './_component/TabProvider';
+import TabDecider from './_component/TabDecider';
+import TopProfile from '@/app/(afterLogin)/_component/TopProfile';
+export default function Routine() {
+  return (
+    <div>
+      <TopProfile />
+      <TabProvider>
+        <Tab/>
+        <br/>
+        <br/>
+        <TabDecider/>
+      </TabProvider>
+    </div>
+  );
+}      

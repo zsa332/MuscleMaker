@@ -10,7 +10,7 @@ const apiInstance = () => {
     
     // baseURL: "https://back.muscle-maker.site/",
     headers: {
-      'Content-Type': 'application/json'
+      'Content-Type': 'application/json',
       // Authorization: `Bearer `, 향후 추가
     },
   });
