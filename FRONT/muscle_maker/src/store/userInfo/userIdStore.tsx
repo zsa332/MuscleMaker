@@ -2,17 +2,15 @@ import {create} from 'zustand'
 
 interface userId{
     userId : number | null
-    setUserId : (userId : string) => void
+    setUserId : (userId : number) => void
 }
 
 const userIdStore = create<userId>((set)=>({
     userId : null,
     setUserId : (userId) => {
-        const parseUserId = Number(userId);
 
-        if(parseUserId!=null){
-            set({userId : parseUserId})
-        }
+        set({userId : userId})
+        
     }
 }))
 
