@@ -10,9 +10,9 @@ import lombok.*;
 @Builder
 public class IndividualGoalWriteRequest {
 
-    private  int userId;
     private double kg;
     private double muscle;
     private double fat;
+    private boolean diet;
 
 }
