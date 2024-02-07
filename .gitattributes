@@ -1,2 +1,1 @@
 *.{100MB[[:space:]]넘는[[:space:]]파일[[:space:]]확장자명} filter=lfs diff=lfs merge=lfs -text
-*.* filter=lfs diff=lfs merge=lfs -text
