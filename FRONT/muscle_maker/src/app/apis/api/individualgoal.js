@@ -1,17 +1,3 @@
-import apiInstance  from "../utils/axios";
-
-const axios = apiInstance();
-
-
-export const individualGoal = {
-
-    /** 개인 목표 불러오기 */
-    getIndividualGaol : (userId) => axios.get(`individualGoal/${userId}`),
-
-    writeIndividualGoal : (individiualGoalResponse) => axios.get(`individualGoal/write`,individiualGoalResponse),
-
-    deleteIndividualGoal : (userId) => axios.post(`individualGoal/${userId}`),
-
-    
-
-};
+version https://git-lfs.github.com/spec/v1
+oid sha256:a9d387829e7b1442abc784ca7c61cc8bf40f9bbc165abb709d5520bb80e06e6f
+size 727
