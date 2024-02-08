@@ -1,5 +1,5 @@
 // stores/FollowModalStore.ts
-import create from 'zustand';
+import { create } from "zustand";
 
 // 상태와 액션들에 대한 인터페이스 정의
 interface FollowModalState {
