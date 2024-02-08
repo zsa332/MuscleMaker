@@ -1,10 +1,10 @@
 import { Suspense } from "react";
-import LoginModal from "@/app/(beforeLogin)/_component/LoginModal";
+import InitialSetupModal from "@/app/(beforeLogin)/_component/InitialSetup";
 
 export default function Page() {
   return (
     <Suspense fallback={<div>Loading...</div>}>
-      <LoginModal />
+      <InitialSetupModal />
     </Suspense>
   );
 }
