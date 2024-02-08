@@ -5,7 +5,7 @@ import style from './tab.module.css'
 
 export const TabContext = createContext({
   tab: "week",
-  setTab: (value: "week" | "month" | "set") => {},
+  setTab: (value: "week" | "month" | "set" | "cart") => {},
 });
 
 type Props = { children: ReactNode };
