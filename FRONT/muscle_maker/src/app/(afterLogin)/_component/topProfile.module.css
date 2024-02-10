@@ -21,3 +21,11 @@
   justify-content: space-between;
   margin-bottom: 6px;
 }
+
+
+.FollowBtn{
+  border-color: transparent;
+  background-color: transparent;
+  font-size: 20px;
+  cursor: pointer;
+}
