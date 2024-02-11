@@ -2,10 +2,8 @@
   display: flex;
   background-color: white;
   margin: 10px;
-  width: 580px;
+  width: 96%;
   height: 260px;
-  border-color: rgb(113, 115, 115);
-  border-style: solid;
   border-radius: 10px;
 }
 
