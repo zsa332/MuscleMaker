@@ -1,24 +1,3 @@
-"use client";
-
-import { useContext } from "react";
-import { TabContext } from "./TabProvider";
-import MemberPage from "./member";
-import FeedPage from "./Feed";
-import CircleChart from "./CircleChart";
-
-
-
-export default function TabDecider() {
-  const { tab } = useContext(TabContext);
-  if (tab === "home") {
-    return (
-      <>
-      <CircleChart/>
-      </>
-    )
-  }
-  else if (tab === 'mem') {
-    return <MemberPage />;
-  }
-  return <FeedPage />;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f812f86b22b0e744ff33ee5a292b80210701db54318ce62fac70a569c118e834
+size 1484
