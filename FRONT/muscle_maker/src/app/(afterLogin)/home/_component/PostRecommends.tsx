@@ -6,7 +6,6 @@ import { ReactNode } from "react";
 const YourContainer = () => {
   return (
     <div>
-      <h2>Post Recommendations</h2>
       <YourComponent />
     </div>
   );
