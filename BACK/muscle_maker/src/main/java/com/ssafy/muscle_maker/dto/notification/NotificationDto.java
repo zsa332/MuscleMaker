@@ -11,5 +11,6 @@ public class NotificationDto {
     private String message;
     private Boolean isRead;
     private NotificationType notificationType;
+    private int sendUserId;
     private int senderId;
 }
