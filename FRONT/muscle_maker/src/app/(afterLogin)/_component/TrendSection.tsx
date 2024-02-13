@@ -1,19 +1,3 @@
-"use client";
-
-import style from "./trendSection.module.css";
-import HashTag from "./HashTag";
-import { usePathname } from "next/navigation";
-
-export default function TrendSection() {
-  const hashTags = ["#운동", "#갓생", "#식단", "#아이유챌린지", "#아이브_식단"];
-  return (
-    <div>
-      <div>
-        <h3>나를 위한 헤시태그</h3>
-        {hashTags.map((hashTag, index) => (
-          <HashTag hashTag={hashTag} key={index} />
-        ))}
-      </div>
-    </div>
-  );
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f671d7895661ec48586fe71774ff04e9bef56533ea1bc3e7976fcb0c0bf70c8b
+size 788
