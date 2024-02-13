@@ -7,9 +7,9 @@ const axios = apiInstance();
 export const basket = {
 
     /** request = (routineId , exerciseId) */
-    moveExerciseBasketToRoutine : (request) => axios.post(`basket`, request),
+    moveExerciseBasketToRoutine : (myRoutineId,exerciseId) => axios.post(`basket?myRoutineId=${myRoutineId}?exerciseId=${exerciseId}`),
 
-    /**cofnig 헤더 설정 */
+    // /**cofnig 헤더 설정 */exerciseId
     removeExerciseAtBasket : (config) => axios.delete(`basket`,config),
 
     /** userId = param */
