@@ -14,7 +14,6 @@ export default function MyFeed() {
         <br />
         <br />
         <br />
-        <br />
         <TabDecider/>
       </TabProvider>
     </div>
