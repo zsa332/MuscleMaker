@@ -15,4 +15,6 @@ public class BaseDto {
     private String name;
     private int userId;
     private String image;
+    private String emailId;
+    private String address;
 }
