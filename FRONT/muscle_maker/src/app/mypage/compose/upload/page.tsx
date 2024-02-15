@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d471253292135fa7b01311f8fd5a8a2618b2afdbdfe56c576e92705fbf8274e4
-size 5015
+import { Suspense } from "react";
+import ClubuploadModal from "@/app/mypage/_component/ClubuploadModal"
+
+export default function Page() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <ClubuploadModal />
+    </Suspense>
+  )
+}
