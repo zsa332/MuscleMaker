@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7aaf28d3a9b650274fc6a9afb57cc4fce8f6b9771c6429b249e6aff445c88272
-size 738
+import CircularLoading3D from "@/app/(afterLogin)/_component/LoadingComponent";
+import TopProfile from "@/app/(afterLogin)/_component/TopProfile";
+import TabProvider from "./_component/TabProvider";
+import Tab from "./_component/Tab";
+import TabDecider from "./_component/TabDecider";
+
+
+export default function MyFeed() {
+  return (
+    <div>
+      <TopProfile />
+      <TabProvider>
+        <Tab />
+        <TabDecider />
+      </TabProvider>
+    </div>
+  );
+}
