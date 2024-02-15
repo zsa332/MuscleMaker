@@ -9,7 +9,7 @@ public class UserAndFollowerResponse {
     String nickname;
     String imgUrl;
     int userId;
-    int followerNum;
+    int followingNum;
     int feedNum;
 
 }
