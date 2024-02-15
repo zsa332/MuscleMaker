@@ -8,4 +8,5 @@ import lombok.*;
 public class FollowUserDto {
     private int userId;
     private String nickname;
+    private String imgUrl;
 }
