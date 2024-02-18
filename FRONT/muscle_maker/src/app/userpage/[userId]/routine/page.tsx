@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d37da952b38772fdabd0d42625a58f62a61d6b7bf58c7a68fcd949cd3a414c0a
-size 697
+import React from "react";
+import style from "./routine.module.css";
+import TopProfile from "@/app/userpage/[userId]/_component/TopProfile";
+import TabProvider from "@/app/userpage/[userId]/routine/_component/TabProvider"
+import Tab from "@/app/userpage/[userId]/routine/_component/Tab";
+import TabDecider from "@/app/userpage/[userId]/routine/_component/TabDecider"
+
+type Props = {
+  params: { userId: string };
+};
+
+export default function Routine({ params }: Props) {
+  return (
+    <div>
+      <TopProfile paramsUserId={params.userId} />
+      <TabProvider>
+        <Tab />
+        <br />
+        <br />
+        <TabDecider paramsUserId={params.userId}/>
+      </TabProvider>
+    </div>
+  );
+}

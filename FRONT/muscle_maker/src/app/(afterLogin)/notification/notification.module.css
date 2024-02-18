@@ -1,3 +1,66 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0130b7a4958d2c79ed24772a8c21a5fc7909ac128222477b73f3a7eb05bc27dc
-size 1114
+.homeFixed {
+  position:fixed;
+  top : 0px;
+  z-index: 1;
+  width: 648px;
+  background-color: rgba(255, 255, 255);
+  backdrop-filter: blur(12px);
+  border-color: rgb(239, 243, 244);
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+
+.homeText {
+  margin-top: 10px;
+  font-size: 23px;
+  line-height: 15px;
+  font-weight: bold;
+  padding: 12px 16px;
+  text-align: center;
+}
+
+.homeTab {
+  
+  height: 40px;
+  display: flex;
+  cursor: pointer;
+}
+
+
+.notifications {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.notificationBox {
+  margin: 15px;
+  border: 1px solid #e2e2e2;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: white;
+}
+
+.goButton {
+  background-color: transparent;
+  border: transparent;
+  font-size: 25px;
+  cursor: pointer;
+  float: right;
+}
+
+.button {
+  margin-top: 10px;
+  margin-right: 10px;
+  width: 100px;
+  height: 25px;
+  background-color: rgba(29, 155, 240, 0.7);
+  border-radius: 8px;
+  color: white;
+  border: transparent;
+  cursor: pointer;
+}
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0; /* 상하 여백 추가 (선택사항) */
+}

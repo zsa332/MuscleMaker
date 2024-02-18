@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9e38c9cdf12a307a0fe10c8a784ed72e21f9458da5f04189488d21b6f3ca91ad
-size 572
+package com.ssafy.muscle_maker.dto.routine.response;
+
+import com.ssafy.muscle_maker.dto.exercise.response.ExerciseResponse;
+import jakarta.persistence.Column;
+import lombok.*;
+import org.hibernate.annotations.ColumnDefault;
+
+import java.time.LocalDate;
+import java.util.List;
+
+@Data
+@AllArgsConstructor
+@Builder
+@NoArgsConstructor
+public class FindRoutineResponse {
+
+    private int routineId;
+
+    private String title;
+
+    private LocalDate date;
+
+    private int whichDay; // 0 월, 1 화, 2 수, 3 목 ...
+
+    private List<ExerciseResponse> exerciseResponseList;
+
+}

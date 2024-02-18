@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e3c914c3b3e3a450bf24a7b762f754231352e3138964016fb5f285fc06d21484
-size 1009
+package com.ssafy.muscle_maker.repository;
+
+import com.ssafy.muscle_maker.entity.IndividualGoal;
+import com.ssafy.muscle_maker.entity.Routine;
+import com.ssafy.muscle_maker.entity.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import java.time.LocalDate;
+import java.util.List;
+
+@Repository
+public interface RoutineRepository extends JpaRepository<Routine, Integer>{
+
+    Routine findByUserAndWhichDayAndDateBetweenAndFlagFalse(User user, int day, LocalDate startDate, LocalDate endDate);
+//    Routine findByRoutineIdAndDateAndFlagFalse(int routineId, LocalDate date);
+    List<Routine> findByUserAndDateBetweenAndFlagFalseOrderByDateAsc(User user, LocalDate startDate, LocalDate endDate);
+//    Routine findByDate(LocalDate date);
+//    List<Routine> findByUserAndSettingsTrueAndFlagFalse(User user);
+
+//    Routine findByRoutineIdAndFlagFalse(int routineId);
+
+    Routine findByUserAndDateAndFlagFalse(User user, LocalDate date);
+
+}
+

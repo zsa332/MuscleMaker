@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c18af01953f4ebe45afbfd17586329d616db63d80f80d22a2fe45bc6e9b9238b
-size 551
+import style from "./home.module.css";
+import { Metadata } from "next";
+import Tab from "./_component/Tab";
+import TabProvider from "./_component/TabProvider";
+import TabDecider from "./_component/TabDecider";
+import { ReactNode } from "react";
+
+export const metadata: Metadata = {
+  title: "홈 / MM",
+  description: "홈",
+};
+
+export default function Home() {
+  return (
+    <main className={style.main}>
+      <TabProvider>
+        <Tab />
+        <br />
+        <br />
+        <br />
+        <TabDecider />
+      </TabProvider>
+    </main>
+  );
+}

@@ -1,3 +1,48 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e60f37bd7aa4f8105b7f7348975e95ebb4932a98d85d5f5fb193a3df3e4d7bca
-size 753
+.mypageButton {
+  width: 66px;
+  height: 66px;
+  padding: 12px;
+  display: flex;
+  cursor: pointer;
+  border: none;
+  align-items: center;
+  text-align: left;
+  background-color: #ffffff;
+  margin-bottom: 30px;
+  position: relative;
+
+}
+
+.mypageUserName {
+  display: none;
+}
+
+.mypageUserImage {
+  display: flex;
+  align-items: center;
+}
+
+.mypageUserImage img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+@media all and (min-width: 1300px) {
+  .mypageButton {
+    background-color: #ffffff;
+    width: 258px;
+  }
+  .mypageUserName {
+    margin: 0 12px;
+    display: inline-block;
+  }
+  .mypageUserName > div:first-child {
+    font-weight: bold;
+  }
+}
+
+.mypageButton:hover {
+  background-color: rgba(15, 20, 25, 0.1);
+  border-radius: 33px;
+}

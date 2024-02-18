@@ -1,3 +1,104 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d0bf778b5d8b8d5bf6fd60bda3034bdb49b2fa033330317b64f79454c3333cd8
-size 2030
+.table {
+  width: 100%;
+  margin: 0 auto;
+  table-layout: fixed; /* 테이블 셀의 너비를 고정 */
+}
+
+.navcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: transparent;
+  border-radius: 10px;
+  margin: 5px;
+  background-color: transparent;
+  color:gray;
+}
+
+ .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  border-radius: 10px;
+  margin: 16px;
+  background-color: white;
+}
+
+/* 모든 th 및 td 요소에 동일한 패딩과 너비를 적용 */
+.navcontainer th, .container td {
+  padding: 10px;
+  text-align: center; /* 내용을 가운데 정렬 */
+  flex: 1; /* flex 요소로 만들어 동일한 공간 분배 */
+}
+
+/* 이미지 셀은 고정된 너비를 가집니다 */
+.clubImage {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  flex: none; /* flex 요소가 아님을 명시 */
+  cursor: pointer;
+}
+
+/* 반응형 디자인 조정 */
+@media (max-width: 768px) {
+  .navcontainer, .container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .navcontainer th, .container td {
+    width: 100%; /* 모바일 뷰에서는 너비를 100%로 설정 */
+  }
+}
+
+
+.clubjoin button {
+  color: rgb(29, 155, 240);
+  font-weight: bold;
+  background-color: transparent;
+  border: 0px solid #007bff;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.clubjoin button:hover {
+  filter : brightness(0.7)
+}
+
+/* "추천 클럽이 없습니다." 메시지를 담는 <td>에 대한 추가 스타일 */
+/* CSS 예시: Flexbox를 사용한 메시지 스타일 */
+.noRecommendation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+}
+
+
+.clubgoal{
+  font-size: 15px;
+}
+
+.sortList{
+  list-style-type: none;
+  text-align: center;
+  margin-top: 10px;
+  color:gray;
+  font-weight: bold;
+}
+
+.line{
+  background: rgb(68, 67, 67,0.2);
+    height:1px;
+    border:0;
+}
+
+.listElement{
+  cursor: pointer;
+  font-size: 15px;
+}

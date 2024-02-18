@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:741cd1482fbcd222e65fee29ba622ee4cec0f6a317344476d80a045542f669bb
-size 705
+package com.ssafy.muscle_maker.dto.kakao;
+
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonPropertyOrder({
+        "nickname",
+        "profile_image",
+        "thumbnail_image"
+})
+public class Properties {
+
+    @JsonProperty("nickname")
+    public String nickname;
+    @JsonProperty("profile_image")
+    public String profileImage;
+    @JsonProperty("thumbnail_image")
+    public String thumbnailImage;
+
+}

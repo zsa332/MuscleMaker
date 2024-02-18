@@ -1,3 +1,192 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a4524d0fddc05abbbb6ae1ffa588f3854bf64cb10cfd0a300165b42d7e896888
-size 2991
+.container {
+  display: flex;
+  align-items: stretch;
+  background-color: #fff;
+}
+
+.leftSectionWrapper {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.leftSection {
+  width: 72px;
+  height: 100dvh;
+}
+
+.leftSectionFixed {
+  position: fixed;
+  width: inherit;
+  padding: 0 8px;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.leftSectionFixed nav {
+  flex: 1;
+}
+
+.ulTag {
+  padding: 0px;
+}
+
+.leftSectionFixed nav li {
+  list-style-type: none;
+}
+
+.leftSectionFixed nav li div {
+  color: black;
+}
+
+@media all and (min-width: 1300px) {
+  .leftSection {
+    width: 275px;
+  }
+  .leftSectionFixed {
+    align-items: flex-start;
+  }
+}
+
+.rightSectionWrapper {
+  display: flex;
+  align-items: flex-start;
+  height: 100dvh;
+  flex-direction: column;
+  flex-grow: 3.5;
+}
+@media all and (min-width: 1024px) {
+  .rightSection {
+    display: inline-block;
+    width: 350px;
+    height: 100%;
+  }
+  .rightSectionInner {
+    width: 990px;
+  }
+}
+
+.main {
+  width: 1000px;
+  height: 300dvh;
+  background-color: #f3f3f3;
+}
+
+.logo {
+  display: inline-block;
+  height: 56px;
+  margin-top: 2px;
+  margin-left: 16px;
+}
+
+.logoPill {
+  width: auto;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none; /* 밑줄 제거 */
+  color: black; /* 텍스트 색상을 검정색으로 설정 */
+}
+
+.logoPill:hover {
+  background-color: rgba(15, 20, 25, 0.1);
+}
+
+.postButton {
+  margin: 16px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 8px 28px;
+  background-color: rgb(29, 155, 240);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  font-size: 17px;
+  text-decoration: none;
+}
+
+.postButton:hover {
+  background-color: rgb(26, 140, 216);
+}
+
+.postButton span {
+  display: none;
+}
+
+.postButton svg {
+  display: inline-block;
+  fill: white;
+  width: 24px;
+}
+
+@media all and (min-width: 1300px) {
+  .postButton {
+    height: 52px;
+    width: 234px;
+    border-radius: 26px;
+  }
+  .postButton span {
+    display: inline-block;
+  }
+  .postButton svg {
+    display: none;
+  }
+}
+
+.navPill {
+  display: inline-flex;
+  height: 50px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.navPill:hover {
+  background-color: rgba(15, 20, 25, 0.1);
+  border-radius: 25px;
+}
+
+.navPill > div {
+  display: none;
+}
+
+.clubPill {
+  display: inline-flex;
+  height: 40px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.clubPill:hover {
+  background-color: rgba(15, 20, 25, 0.1);
+  border-radius: 20px;
+}
+
+.clubPill > div {
+  display: none;
+}
+
+@media all and (min-width: 1300px) {
+  .navPill > div {
+    margin-left: 20px;
+    margin-right: 16px;
+    font-size: 20px;
+    display: inline-block;
+  }
+  .clubPill > div {
+    margin-left: 16px;
+    margin-right: 12px;
+    font-size: 20px;
+    display: inline-block;
+  }
+}

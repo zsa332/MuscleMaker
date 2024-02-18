@@ -1,3 +1,157 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d90d23dfdd234da09f6700a9cde3253154368757ead2bf42865bee798811f340
-size 2586
+/* modal.module.css */
+
+.modalBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  overflow: hidden; /* 스크롤 제거 */
+  max-height: 90vh; /* 모달이 화면의 90%까지만 늘어나도록 설정 */
+  position: relative; /* 모달 내부의 상대적 위치 지정 */
+}
+
+.closeButton {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background-color: #fff;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.7;
+  transition: background-color 0.3s;
+}
+
+.closeButton:hover {
+  background-color: rgba(15, 20, 25, 0.1);
+}
+
+.modalForm {
+  width: 100%;
+}
+
+.modalBody {
+  margin-bottom: 20px;
+}
+
+.container {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.input {
+  width: calc(100% - 20px); /* 컨테이너 내에 맞도록 너비 조정 */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  resize: vertical; /* 텍스트 상자의 크기 조절을 수직 방향으로만 활성화 */
+  min-height: 100px; /* 텍스트 상자의 최소 높이 설정 */
+}
+
+.inputPic {
+  margin-bottom: 20px;
+}
+
+.inputBox {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  min-height: 40px; /* 높이 변경 */
+}
+
+.mid {
+  margin-bottom: 20px;
+}
+
+.checkboxContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.checkboxLabel {
+  margin-left: 5px;
+}
+
+.uploadPicIcon {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.uploadButton {
+  display: none;
+}
+
+.uploadPic {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  border: 2px dashed #1da1f2;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagePreview {
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.previewImage {
+  width: 100%;
+}
+
+.footerButtons {
+  display: flex;
+  align-items: center;
+}
+
+.footerButtonLeft {
+  flex: 1;
+}
+
+.actionButton {
+  background-color: #1da1f2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.actionButton:hover {
+  background-color: #0d91e5;
+}

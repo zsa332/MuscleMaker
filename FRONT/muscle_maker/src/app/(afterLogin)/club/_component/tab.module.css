@@ -1,3 +1,108 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:be662e84043cc9d4dc110d5ce06f218ea035698210c4db639f08f139296bf4b3
-size 1919
+.homeFixed {
+  position: fixed;
+  z-index: 1;
+  width: 650px;
+  background-color: rgba(255, 255, 255, 0.85);
+  /* backdrop-filter: blur(12px); */
+  border-color: rgb(239, 243, 244);
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+
+.homeText {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: bold;
+  padding: 12px 16px;
+  text-align: center;
+}
+
+.homeTab {
+  height: 53px;
+  display: flex;
+  cursor: pointer;
+}
+
+.homeTab > div {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.homeTab a:hover {
+  background-color: rgba(15, 20, 25, 0.1);
+}
+
+.tabIndicator {
+  height: 4px;
+  align-self: center;
+  background-color: rgb(29, 155, 240);
+  min-width: 56px;
+  width: 56px;
+  position: absolute;
+  bottom: 0px;
+  border-radius: 9999px;
+}
+
+
+.clubTitle{
+  margin-top :30px;
+  font-weight: bold;
+  font-size: 40px;
+  border : 0px;
+  border-radius: 10px;
+  background-color: black;
+  color : white;
+  padding : 10px;
+  opacity: 0.5;
+  display: inline-block; /* 또는 block 대신 inline-block을 사용하여 실제 내용에 맞게 너비를 조절합니다. */
+  width: auto;
+  height: auto;
+}
+
+.else{
+  margin-top:-50px;
+}
+
+
+.clubOtherElse{
+  border : 0px;
+  border-radius: 10px;
+  background-color: black;
+  opacity: 0.5;
+
+  color : white;
+  padding : 10px;
+  display: inline-block; /* 또는 block 대신 inline-block을 사용하여 실제 내용에 맞게 너비를 조절합니다. */
+  width: auto;
+  height: auto;
+}
+
+.clubContainer{
+  display: flex;
+  flex-direction: row;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.levelCircle{
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  margin-left: 50px;
+  margin-right: 40px;
+  margin-top: 20px;
+  position:absolute;
+}
+
+.menu{
+  position:absolute;
+  right:0;
+  top : 36px;
+  width: auto;
+  height: 50px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.3);
+}

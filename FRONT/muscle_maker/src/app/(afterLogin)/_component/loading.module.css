@@ -1,3 +1,38 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a2a289eac8a570265323a81ec503fefab95daadf82731d1ac16b94a09c6db57e
-size 774
+.loadingContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  perspective: 500px;
+}
+
+.circular3D {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  animation: rotateCircle 20s infinite linear;
+  transform-style: preserve-3d;
+}
+
+@keyframes rotateCircle {
+  from { transform: rotateY(360deg); }
+  to { transform: rotateY(0deg); }
+}
+
+
+.letter3D {
+  position: absolute;
+  font-size: 24px;
+  font-weight: bold;
+  width: 30px;
+  height: 30px;
+  left: 50%;
+  top: 50%;
+  transform-origin: 0 -100px; /* Adjust this value for the circle radius */
+  transform-style: preserve-3d;
+}
+
+/* Adjust the rotation to make letters stand up */
+.letter3D {
+  transform: rotateX(0deg); /* Remove individual X rotation for standing letters */
+}

@@ -1,3 +1,42 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:969707e3f24cd7d5cdb5392226ad1eee8432279fbc6a4eb476e613302134c295
-size 595
+.navPill {
+  position : relative;
+  display: inline-flex;
+  height: 50px;
+  align-items: center;
+}
+
+.navPill:hover {
+  background-color: rgba(15, 20, 25, 0.1);
+  border-radius: 29px;
+}
+
+.navPill > div {
+  display: none;
+}
+
+@media all and (min-width: 1300px) {
+  .navPill > div {
+    margin-left: 20px;
+    margin-right: 16px;
+    font-size: 20px;
+    display: inline-block;
+  }
+}
+
+
+.bellImg{
+  width: 26px;
+  height: 28px;
+  position : absolute;
+}
+
+
+.circle{
+  width: 10px;
+  height: 10px;
+  border-color: red;
+  background-color: red;
+  border-radius: 50%;
+  position : absolute;
+  top: 10px;
+}

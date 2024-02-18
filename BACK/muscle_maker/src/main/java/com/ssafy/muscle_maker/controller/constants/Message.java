@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6c38acd3168794049af234d5ff59ecff7f25a4c242442f0cddc1b2ed3463b690
-size 536
+package com.ssafy.muscle_maker.controller.constants;
+
+import lombok.Data;
+
+@Data
+public class Message {
+
+    private String message;
+    private Object data;
+
+    public Message() {
+        this.data = null;
+        this.message = null;
+    }
+
+    public Message(String message) { // 메세지만 있을 경우
+        this.message = message;
+        this.data = null;
+    }
+
+    public Message(String message, Object data) { // 메세지 데이터 모두 있는 경우
+        this.message = message;
+        this.data = data;
+    }
+}

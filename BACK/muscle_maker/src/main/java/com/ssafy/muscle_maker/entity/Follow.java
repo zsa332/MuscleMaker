@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:47b3459762545cc0fb38d82f0700683ec60ea7db040fad4405e11bb211b9efbf
-size 580
+package com.ssafy.muscle_maker.entity;
+
+import jakarta.persistence.*;
+import lombok.*;
+
+@Entity
+@Table(name = "follow")
+@Getter
+@Setter
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
+public class Follow extends BaseTime{
+    @Id
+    @Column(name = "follow_id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int followId;
+
+    //follower -> following
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "follower")
+    private User follower;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "following")
+    private User following;
+}

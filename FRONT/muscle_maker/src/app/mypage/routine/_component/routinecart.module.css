@@ -1,3 +1,76 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d760f5cc5d1f139cb833f7bf5b47172d3d167bda7db9480119ea9f9b38b5b07a
-size 1590
+/* RoutineCart.module.css */
+.container {
+    margin : 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* 아이템들을 시작 지점에서부터 정렬 */
+    gap: 20px;
+    padding-left: 25px;
+  }
+  
+  .exerciseItem {
+    flex-basis: calc(33.333% - 20px);
+    background-color: white; /* 배경색 */
+    border: 1px solid #ddd; /* 테두리 */
+    border-radius: 8px; /* 모서리 둥글게 */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+    transition: transform 0.3s ease-in-out;
+    
+  }
+
+  @media (max-width: 1024px) { /* 아이패드 프로와 비슷한 크기 */
+    .exerciseItem {
+        flex-basis: calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 768px) { /* 아이패드와 비슷한 크기 */
+    .exerciseItem {
+      flex-basis: 100%; /* 한 줄에 1개 */
+    }
+  }
+  
+  .exerciseItem:hover {
+    transform: translateY(-5px); /* 호버 시 위로 소폭 이동 */
+  }
+  
+  .exerciseDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .selectDay {
+    margin-top: 15px;
+  }
+  
+  /* 셀렉트 박스 스타일 */
+  .selectBox {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .buttonGroup {
+    display: flex;
+    flex-direction: column;
+    margin-top : 10px;
+  }
+  
+  .button {
+    margin-top : 5px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    opacity: 0.7;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+  

@@ -1,3 +1,50 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:206ebc959e9bcaf3de5d1f9883d4844c10dfe47bcdce7316146eecd9caadba9f
-size 768
+.clubContainer{
+  border : 0px;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  margin : 10px;
+  height: 150px;
+  align-items: center;
+  cursor: pointer;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.homeText {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: bold;
+  padding: 12px 16px;
+  text-align: center;
+  background-color: white;
+}
+
+
+.clubTitle{
+  margin-top :30px;
+  font-weight: bold;
+  font-size: 30px;
+  border : 0px;
+  border-radius: 10px;
+  background-color: black;
+  color : white;
+  padding : 10px;
+  opacity: 0.5;
+}
+
+
+.clubOtherElse{
+  margin-top : -24px;
+  border : 0px;
+  border-radius: 10px;
+  background-color: black;
+  opacity: 0.5;
+
+  color : white;
+  padding : 10px;
+}
+
+

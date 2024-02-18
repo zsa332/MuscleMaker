@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:54a15c5755d1e17c9895d3fe40b3df2fb70eca76e4fd06e5cadde2ac6cc64100
-size 542
+package com.ssafy.muscle_maker.dto.clubs.response;
+
+import com.ssafy.muscle_maker.entity.UserClub;
+import jakarta.persistence.*;
+import lombok.*;
+import org.hibernate.annotations.ColumnDefault;
+
+import java.util.List;
+
+@Getter
+@Setter
+@AllArgsConstructor
+@Builder
+public class ClubResponse {
+     private int clubId;
+
+     private String title;
+
+     private boolean category;
+
+     private int level;
+
+     private String image;
+
+     private int exp;
+
+     private int successDays;
+
+     private String goal;
+
+     private int memberCnt;
+}

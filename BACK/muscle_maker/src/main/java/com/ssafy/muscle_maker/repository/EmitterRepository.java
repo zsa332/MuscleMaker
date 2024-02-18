@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:414156d029ce2800a9f2f945bea67f8ebb2de8e2287714460df8de8080a899e3
-size 742
+package com.ssafy.muscle_maker.repository;
+
+import org.springframework.stereotype.Repository;
+import org.springframework.web.servlet.mvc.method.annotation.SseEmitter;
+
+import java.util.Map;
+import java.util.Optional;
+import java.util.concurrent.ConcurrentHashMap;
+
+@Repository
+public class EmitterRepository {
+    private final Map<String, SseEmitter> emitters = new ConcurrentHashMap<>();
+
+    public SseEmitter save(String emitterId, SseEmitter sseEmitter) {
+        emitters.put(emitterId, sseEmitter);
+        return sseEmitter;
+    }
+
+    public SseEmitter findByEmitterId(String emitterId){
+        return emitters.get(emitterId);
+    }
+
+    public void deleteByEmitterId(String emitterId) {
+        emitters.remove(emitterId);
+    }
+}

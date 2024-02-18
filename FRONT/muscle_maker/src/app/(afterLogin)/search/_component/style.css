@@ -1,3 +1,51 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6186aeac9e258700e149a59ef7bc605b8e906eb48392461d91bf0c81624ca862
-size 1000
+.comment-input-container {
+    display: flex;
+    align-items: center;
+   
+    /* border: 1px solid rgb(179, 179, 179); */
+    /* border-radius: 40px; */
+  }
+
+  .test-input {
+    display: flex;
+    align-items: center;
+    flex:1;
+    margin-top: 10px;
+    border: 1px solid rgb(179, 179, 179);
+    border-radius: 40px;
+  }
+  
+  .comment-input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+    margin-left: 10px;
+  }
+  .tag-list {
+    cursor: pointer;
+    color: #80B3FF; 
+  }
+  .tag-list:hover {
+    text-decoration: underline; /* 마우스 호버 시 밑줄 추가 */
+  }
+  
+  
+  .comment-submit-btn {
+    padding: 8px 16px;
+    background-color: white;
+    color: #3897f0;
+    border: none;
+    border-radius: 25px;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+    margin-left: auto; /* 오른쪽 끝에 위치하도록 설정 */
+  }
+  
+  .comment-submit-btn:hover {
+    color: #0360d9; /* hover 효과 */
+  }
+  

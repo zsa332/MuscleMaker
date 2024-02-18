@@ -1,3 +1,41 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3bd45ebcd96ebcddedbdba6621131bcf7bf8936f893fe86d5ff272b69684a121
-size 1199
+import { create } from "zustand";
+
+interface notification {
+  notificationId: number;
+  message: string;
+  isRead: boolean;
+  notificationType: string;
+  senderId: number;
+  sendUserId: number;
+}
+
+interface notificationListState {
+  canChange: boolean;
+  notifications: notification[];
+  setNotifications: (notifications: notification[]) => void;
+  setCanChange: (flag: boolean) => void;
+  setIsRead: (notificationId: number, isRead: boolean) => void;
+}
+
+export const useNotificationStore = create<notificationListState>(
+  (set, get) => ({
+    notifications: [],
+    setNotifications: (notifications: any) => {
+      const { canChange } = get(); // 현재 상태 가져오기
+      if (canChange) {
+        set({ notifications });
+      }
+    },
+    canChange: true,
+    setCanChange: (flag: boolean) => set({ canChange: flag }),
+    setIsRead: (notificationId: number, isRead: boolean) => {
+      const { notifications } = get();
+      const updatedNotifications = notifications.map((notification) =>
+        notification.notificationId === notificationId
+          ? { ...notification, isRead }
+          : notification
+      );
+      set({ notifications: updatedNotifications });
+    },
+  })
+);

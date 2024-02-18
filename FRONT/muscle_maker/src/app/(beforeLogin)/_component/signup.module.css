@@ -1,3 +1,145 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1aa916844da91ec3fa98d50fe9f4c8321ade45ab5b2437747f2e45cf6eb49d7f
-size 2227
+.modalBackground {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+@media (prefers-color-scheme: dark) {
+  .modalBackground {
+    background-color: rgba(91, 112, 131, 0.4);
+  }
+}
+
+.modal {
+  background-color: white;
+  position: relative;
+  width: 100%;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+}
+.modalHeader {
+  padding: 36px 0 20px;
+  font-size: 31px;
+  font-weight: bold;
+  margin: 25px;
+}
+
+.textDesign {
+  font-weight: bold;
+  text-align: center;
+}
+@media all and (min-width: 687px) {
+  .modal {
+    top: 48px;
+    min-width: 500px;
+    max-width: 500px;
+    height: 640px;
+    padding: 0;
+  }
+  .modalHeader {
+    padding: 36px 80px 20px;
+  }
+  .modalBody {
+    padding: 0 80px;
+  }
+}
+
+.modal form {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.modalBody {
+  flex: 1;
+}
+
+.inputDiv {
+  display: flex;
+  flex-direction: column;
+  height: 56px;
+  position: relative;
+  margin-left: 0;
+  margin-top: 5px;
+}
+
+.input {
+  width: 330px;
+  height: 40px;
+  border: 1px solid rgb(207, 217, 222);
+  border-radius: 8px;
+  font-size: 14px;
+  padding: 5px;
+  background: transparent;
+}
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+.buttonDiv {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.actionButton {
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  background-color: rgb(15, 20, 25);
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+  border: 1px solid white;
+  margin-bottom: 5px;
+}
+.actionButton:disabled {
+  opacity: 0.5;
+}
+.actionButton:hover {
+  background-color: rgb(39, 44, 48);
+}
+.closeButton {
+  width: 34px;
+  height: 34px;
+  border-radius: 17px;
+  border: none;
+  cursor: pointer;
+  background-color: #fff;
+  position: absolute;
+  top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signUpEnd {
+  position: relative;
+  margin: 5px;
+  text-align: center;
+}
+.signUpLine {
+  color: #bcbcbc;
+  font-size: 14px;
+  margin-bottom: 35px;
+}
+
+.loginButton {
+  color: black;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.error {
+  font-weight: bold;
+  color: red;
+}

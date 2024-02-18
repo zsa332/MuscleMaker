@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1c5e18ef96a91975fc838e5efb190d91e07c86d05127fd78f1b47e4cc3254fea
-size 548
+// components/FollowModal.tsx
+import React from 'react';
+import styles from './FollowModal.module.css'; // CSS 모듈 import
+
+interface ModalProps {
+  show: boolean;
+  onClose: () => void;
+  children: React.ReactNode;
+}
+
+const FollowModal: React.FC<ModalProps> = ({ show, onClose, children }) => {
+  if (!show) return null;
+
+  return (
+    <div className={styles.modal} onClick={onClose}>
+      <div className={styles.modalContent} onClick={e => e.stopPropagation()}>
+        {children}
+      </div>
+    </div>
+  );
+};
+
+export default FollowModal;

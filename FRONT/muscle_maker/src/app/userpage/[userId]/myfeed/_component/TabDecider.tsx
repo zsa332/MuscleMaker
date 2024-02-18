@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b594e3ae0a2191937a1d3dcc99e380738e4a24eadd8f6969e8c9b938848f1a74
-size 765
+"use client";
+
+import style from "@/app/mypage/myfeed/_component/tabDecider.module.css";
+import { useContext } from "react";
+import { TabContext } from "./TabProvider";
+import MyDiet from "./MyDiet";
+import MyExercise from "./MyExercise";
+import MyAllFeeds from "./MyAllFeeds";
+
+type Props = {
+  paramsUserId: string;
+};
+
+export default function TabDecider({ paramsUserId }: Props) {
+  const { tab } = useContext(TabContext);
+  if (tab === "diet") {
+    return (
+      <div>
+        <MyDiet paramsUserId={paramsUserId} />
+      </div>
+    );
+  } else if (tab === "exercise") {
+    return (
+      <div>
+        <MyExercise paramsUserId={paramsUserId} />
+      </div>
+    );
+  }
+  return (
+    <div>
+      <MyAllFeeds paramsUserId={paramsUserId} />
+    </div>
+  );
+}

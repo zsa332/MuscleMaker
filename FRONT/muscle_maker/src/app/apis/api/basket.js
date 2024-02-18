@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2e7014021ace8743975742e3f63657cf86834545fb0109268c4306b150e27cfe
-size 513
+import apiInstance from "../utils/axios"; 
+
+const axios = apiInstance();
+
+
+
+export const basket = {
+
+    /** request = (routineId , exerciseId) */
+    moveExerciseBasketToRoutine : (userId,exerciseId,whichDay) => axios.post(`basket?userId=${userId}&exerciseId=${exerciseId}&whichDay=${whichDay}`),
+
+    // /**cofnig 헤더 설정 */exerciseId
+    removeExerciseAtBasket : (config) => axios.delete(`basket`,config),
+
+    /** userId = param */
+    readBasket : (userId) => axios.get(`basket?userId=${userId}`),
+
+
+};

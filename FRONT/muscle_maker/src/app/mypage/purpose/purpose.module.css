@@ -1,3 +1,77 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c02d15c6ce68d83eff950c92f21e419fddb32b6b5f3557dc229393c362ad9cbf
-size 1230
+.main {
+  height: 620px;
+  background-color: #f3f3f3;
+}
+
+.head {
+  display: flex;
+  justify-content: center;
+}
+
+.head h2 {
+  width: 410px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.main img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.innerStyle {
+  margin-top: 20px;
+  width: 300px;
+  height: 350px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.innerText {
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.foot svg {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 50%;
+}
+
+.foot svg:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.foot div {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 75px;
+  right: 75px;
+  width: 400px;
+  height: 50px;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+  border: 1px solid black;
+}

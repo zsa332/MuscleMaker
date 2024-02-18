@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:36324d2b3bb5a86e9750aa0fed92b66ff53043ca99470f740ec1a6dbc4a92492
-size 615
+"use client";
+
+import style from "@/app/mypage/myfeed/_component/tabDecider.module.css";
+import { useContext } from "react";
+import { TabContext } from "./TabProvider";
+import MyDiet from "./MyDiet";
+import MyExercise from "./MyExercise";
+import MyAllFeeds from "./MyAllFeeds";
+
+export default function TabDecider() {
+  const { tab } = useContext(TabContext);
+  if (tab === "diet") {
+    return (
+      <div>
+        <MyDiet />
+      </div>
+    );
+  } else if (tab === "exercise") {
+    return (
+      <div>
+        <MyExercise />
+      </div>
+    );
+  }
+  return (
+    <div>
+      <MyAllFeeds />
+    </div>
+  );
+}

@@ -1,3 +1,37 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7bff3960d378454793f00593eae8799d9239b90b94b4c4f92a0f5378c54d9084
-size 616
+package com.ssafy.muscle_maker.dto.users.response;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.Setter;
+
+@Data
+@Setter
+@AllArgsConstructor
+@Builder
+public class UserInfoResponse {
+    private String emailId;
+
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
+
+    private String password;
+
+
+    private String nickname;
+
+
+    private String name;
+
+    private String address;
+
+    private int height;
+
+    private int weight;
+
+    private int age;
+
+    private boolean gender;
+
+    private String image;
+}

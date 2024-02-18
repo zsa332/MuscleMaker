@@ -1,3 +1,45 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1ae1aaf57e79e538e3050935aeb3a169572e1db37d2a5d8e6b5c75e65ca15f07
-size 933
+/* followersList.module.css */
+
+.container {
+  display: flex;
+  justify-content: left;
+  padding: 10px;
+  margin: 10px;
+  width: 30vw;
+  background-color: white;
+  border: 1px solid #ccc; /* 경계선 추가 */
+  border-radius: 5px; /* 경계선 둥글게 */
+}
+
+.imagecontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%; /* 원형 이미지 */
+  width: 50px;
+  height: 50px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden; /* 이미지가 컨테이너를 넘어가지 않도록 함 */
+}
+
+.nicknamecontainer {
+  padding-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  overflow: hidden; /* 이미지가 컨테이너를 넘어가지 않도록 함 */
+}
+
+.followbutton {
+  padding-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+}
+
+

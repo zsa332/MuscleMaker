@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fc4d65a89edde9569ebc0e97618deb3a8805e1a61bfb2593f72b0019e311bc8e
-size 702
+package com.ssafy.muscle_maker.entity;
+
+import jakarta.persistence.*;
+import lombok.*;
+
+@Entity
+@Getter
+@Builder
+@Table(name = "notification")
+@AllArgsConstructor
+@NoArgsConstructor
+public class Notification extends BaseTime{
+    @Id
+    @Column(name = "notification_id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int notificationId;
+
+    @Column(length = 200)
+    private String message;
+
+    @Column(nullable = false)
+    private Boolean isRead;
+
+    @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
+    private NotificationType notificationType;
+
+    private int senderId;
+
+    private int receiverId;
+
+    public void readCheck(){
+        isRead = true;
+    }
+}

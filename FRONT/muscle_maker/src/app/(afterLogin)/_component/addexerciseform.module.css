@@ -1,3 +1,96 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:19d716b6d86ee4126e1722a34dc744f07c7a58158a1c2e7f6221510dab7cf080
-size 2042
+.formContainer {
+  margin: 10px;
+  margin-top : 20px;
+  display: flex;
+  background-color: transparent; /* 밝은 배경색 */
+  flex-direction: column;
+  /* align-items: center; */
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 그림자 효과 */
+  /* border-radius: 10px; 둥근 모서리 */
+  /* border-style: solid;
+  border-color: red; */
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.formTable {
+  /* border-collapse: collapse; */
+  /* border-collapse: separate; */
+  margin : 13px;
+  border-radius: 10px;
+  width: 96%;
+}
+
+.formTable td, .formTable th {
+  border: 1px solid #ddd;
+  text-align: center;
+  border: none;
+}
+
+.formTable th {
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.formTable input[type="text"],
+.formTable input[type="number"],
+.formTable select {
+  width: 90%;
+  padding: 8px;
+  margin: 4px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border: none;
+}
+
+.formTable input[type="checkbox"] {
+  margin-top: 10px;
+  border: none;
+
+}
+
+.submitButton {
+  width: 98.5%;
+  background-color: rgb(0,152,255);
+  padding : 3px;
+  margin-left : 7px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+.submitButton2 {
+  width: 98.5%;
+  color: rgb(0,152,255);
+  padding : 3px;
+  margin-left : 7px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.submitButton2:hover{
+  opacity: 1;
+}
+
+
+
+
+.plusimg {
+  border-radius: 50%; /* 동그랗게 만들기 */
+  width: 30px; /* 이미지 너비 조정 */
+  height: 30px; /* 이미지 높이 조정 */
+  background-image: url("/public/plu.png"); /* 이미지 경로 설정 */
+  background-size: cover; /* 배경 이미지를 컨테이너에 맞게 조절 */
+}
+
+.minus {
+  border-radius: 50%; /* 동그랗게 만들기 */
+  width: 30px; /* 이미지 너비 조정 */
+  height: 30px; /* 이미지 높이 조정 */
+  background-image: url("/public/mi.png"); /* 이미지 경로 설정 */
+  background-size: cover; /* 배경 이미지를 컨테이너에 맞게 조절 */
+}

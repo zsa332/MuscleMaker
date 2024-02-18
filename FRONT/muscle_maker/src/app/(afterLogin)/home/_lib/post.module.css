@@ -1,3 +1,154 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:db0715c94ec3f5ef5a156074abd60a25bdb9fdddd3493d8318d502a8ab13eb6a
-size 2641
+.postContainer{
+    width: 100%;
+    height: auto;
+    background-color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+}
+
+.post{
+    width: 95%;
+    border : 1px solid white;
+    border-radius: 10px;
+    background-color: white;
+    margin-top : 30px;
+    margin-left : 14px;
+}
+
+.profileImage{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-top : 20px;
+    position : relative;
+    cursor: pointer;
+}
+
+.profileImageCover{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgb(0,0,0,0.5);
+    position: absolute;
+    top : 20px;
+    left : 20px;
+    cursor: pointer;
+}
+
+
+.profile{
+    display: flex;
+    flex-direction: row;
+    position:relative;
+    margin-bottom: 13px;
+}
+
+.profileDetail{
+    display: flex;
+    flex-direction: column;
+    margin-top: 42px;
+
+    .nickname{
+        padding-left : 25px;
+        font-size: 22px;
+        font-weight: bold;
+    }
+    
+    .clickNickname{
+        cursor: pointer;
+        padding-left : 25px;
+        margin-top: 3px;
+        font-size: 15px;
+        color: gray;
+    }
+
+    .clickNickname:hover{
+        color : black;
+    }
+}
+
+.feedContent{
+    margin-left : 15px;
+    display : flex;
+    flex-direction: column;
+
+
+    .tags{
+        color : rgb(29, 155, 240, 0.9);
+
+        .tag{
+            cursor : pointer;
+        }
+
+        .tag:hover {
+            color : rgba(5, 41, 69, 0.9);
+        }
+    }
+
+    .contentImage{
+        margin-top:10px;
+        margin-left:-15px;
+        width: 102.5%;
+        height: 370px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+.commentContainer{
+    margin-bottom: 20px;
+
+
+    .commentImage{
+        vertical-align: middle;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+    }
+
+    .commentInput{
+        vertical-align: middle;
+        margin-left: 12px;
+        margin-right: 10px;
+        width:80%;
+        border-radius: 5px;
+        height: 23px;
+        border : 1px solid rgba(134, 131, 131, 0.5);
+    }
+
+    .commentButton{
+        border: transparent;
+        color : gray;
+        cursor: pointer;
+        height: 26px;
+        border-radius: 5px;
+    }
+}
+
+.comments{
+    display: flex;
+    flex-direction: column;
+
+    .comment{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 10px;
+            
+        .image{
+            margin-top : 7px;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+        }
+
+        .commentElse{
+            display: flex;
+            margin: 10px;
+        }
+    }
+
+}
+
+

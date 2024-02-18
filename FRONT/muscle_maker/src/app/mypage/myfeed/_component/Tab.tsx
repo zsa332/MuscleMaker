@@ -1,3 +1,45 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:267e744afb64498705a4c710f34f2382da443a4fa9ca4b46cc572032d4f18a74
-size 1152
+"use client";
+import style from "./tab.module.css";
+import { useContext } from "react";
+import { TabContext } from "./TabProvider";
+
+export default function Tab() {
+  const { tab, setTab } = useContext(TabContext);
+  const onClickDiet = () => {
+    setTab("diet");
+  };
+  const onClickExercise = () => {
+    setTab("exercise");
+  };
+  const onClickAll = () => {
+    setTab("all");
+  };
+  return (
+    <div className={style.homeFixed}>
+      <div className={style.homeText}></div>
+      <div className={style.homeTab}>
+        <div onClick={onClickDiet}>
+          식단
+          <div
+            className={style.tabIndicator}
+            hidden={tab === "exercise" || tab === "all"}
+          ></div>
+        </div>
+        <div onClick={onClickExercise}>
+          운동
+          <div
+            className={style.tabIndicator}
+            hidden={tab === "diet" || tab === "all"}
+          ></div>
+        </div>
+        <div onClick={onClickAll}>
+          전체
+          <div
+            className={style.tabIndicator}
+            hidden={tab === "diet" || tab === "exercise"}
+          ></div>
+        </div>
+      </div>
+    </div>
+  );
+}

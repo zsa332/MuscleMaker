@@ -1,3 +1,46 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:266249306fe82fa969df21d6e619ed5182afa9e5ea2610157fb758a48d826fc2
-size 716
+.navPill {
+  display: inline-flex;
+  height: 50px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.navPill:hover {
+  background-color: rgba(15, 20, 25, 0.1);
+  border-radius: 25px;
+}
+
+.navPill > div {
+  display: none;
+}
+
+.clubPill {
+  display: inline-flex;
+  height: 40px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.clubPill:hover {
+  background-color: rgba(15, 20, 25, 0.1);
+  border-radius: 20px;
+}
+
+.clubPill > div {
+  display: none;
+}
+
+@media all and (min-width: 1300px) {
+  .navPill > div {
+    margin-left: 20px;
+    margin-right: 16px;
+    font-size: 20px;
+    display: inline-block;
+  }
+  .clubPill > div {
+    margin-left: 16px;
+    margin-right: 12px;
+    font-size: 16x;
+    display: inline-block;
+  }
+}

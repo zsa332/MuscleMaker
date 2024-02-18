@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:05b7c5c1cc36f8f78ced7038c3c1ab2ce1414ed117ed2fce347323684e7e2c11
-size 549
+"use client";
+
+import { useContext } from "react";
+import { TabContext } from "./TabProvider";
+import WeeklyComponent from "./WeeklyCalendar";
+import MonthCalendar from "./MonthCalendar";
+import dayjs from "dayjs";
+
+type Props = {
+  paramsUserId: string;
+};
+
+const today = dayjs().format('YYYY-MM-DD'); 
+
+export default function TabDecider({paramsUserId}:Props) {
+  const { tab } = useContext(TabContext);
+  if (tab === "rec") {
+    return <WeeklyComponent paramsuserId={paramsUserId}/>;
+  }
+  return <MonthCalendar paramsuserId={paramsUserId}/>;
+}

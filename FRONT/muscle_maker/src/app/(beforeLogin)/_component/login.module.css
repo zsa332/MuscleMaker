@@ -1,3 +1,191 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c4d1f53f88cd08ea9592d408e07696406d030971628dd5d6013ed0463d971664
-size 3100
+.modalBackground {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+    .modalBackground {
+        background-color: rgba(91, 112, 131, 0.4);
+    }
+}
+
+.modal {
+    background-color: white;
+    position: relative;
+    width: 100%;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+}
+.modalHeader {
+    padding: 36px 0 20px;
+    font-size: 31px;
+    font-weight: bold;
+    margin : 25px;
+}
+@media all and (min-width: 687px) {
+    .modal {
+        top: 48px;
+        min-width: 500px;
+        max-width: 500px;
+        height: 500px;
+        padding: 0;
+    }
+    .modalHeader {
+        padding: 36px 80px 20px;
+    }
+    .modalBody {
+        padding: 0 80px;
+    }
+}
+
+.modal form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.modalBody {
+    flex: 1;
+}
+
+.inputEmail {
+    width: 100%;
+    display: flex;
+    border: 1px solid rgb(207, 217, 222);
+    border-radius: 8px;
+
+    flex-direction: row;
+    height: 30px;
+    position: relative;
+    margin-right: 5px;
+    font-size: 14px;
+    padding : 5px;
+}
+
+.textEmail{
+    position:relative;
+    margin-top: 10px;
+}
+
+.selectEmailDomain{
+    width: 100%;
+    display: flex;
+    border: 1px solid rgb(207, 217, 222);
+    border-radius: 8px;
+
+    flex-direction: row;
+    height: 40px;
+    position: relative;
+    margin-left: 5px;
+    font-size: 13px;
+}
+
+.labelEmail{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 56px;
+}
+
+.inputDiv {
+    display: flex;
+    flex-direction: row;
+    height: 56px;
+    position: relative;
+    margin-left: 0;
+}
+
+.input {
+    width: 100%;
+    height : 30px;
+    border: 1px solid rgb(207, 217, 222);
+    border-radius: 8px;
+    font-size: 14px;
+    padding : 5px;
+    background: transparent;
+}
+
+.buttonDiv{
+    display : flex;
+    flex-direction: column;
+    position : relative;
+}
+
+.actionButton {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    background-color: rgb(15, 20, 25);
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    border: 1px solid white;
+    margin-bottom : 5px;
+}
+.actionButton:disabled {
+    opacity: 0.5;
+}
+.actionButton:hover {
+    background-color: rgb(39,44,48);
+}
+.kakaoButton{
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    background-color: rgb(249,224,0);
+    color: rgb(58,29,29);
+    font-weight:bold;
+    font-size: 17px;
+    cursor: pointer;
+    border: 1px solid white;
+    justify-content: space-around;
+}
+.kakaoButton:hover {
+    opacity: 0.8;
+}
+
+.kakaoLogo{
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+    margin-bottom : -2px;
+
+}
+
+
+
+
+
+.message {
+    color: red;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.textDesign{
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.loginEnd {
+    text-align: center;
+    font-size: 13px;
+}
+.loginLine {
+    color: #bcbcbc;
+    font-size: 13px;
+    margin-bottom: 35px;
+}
+

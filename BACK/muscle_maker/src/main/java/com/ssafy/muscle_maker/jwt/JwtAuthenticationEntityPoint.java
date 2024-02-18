@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2151550c615ff664c73decb16e1440b030623c5f5dd66533cf00f2dbce4b0ffc
-size 843
+package com.ssafy.muscle_maker.jwt;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import org.springframework.security.core.AuthenticationException;
+import org.springframework.security.web.AuthenticationEntryPoint;
+import org.springframework.stereotype.Component;
+
+import java.io.IOException;
+
+//유효한 자격 증명을 제공하지 않고 접근하려 할 때 401 unauthorized 에러를 리턴할 클래스
+@Component
+public class JwtAuthenticationEntityPoint implements AuthenticationEntryPoint {
+
+    @Override
+    public void commence(HttpServletRequest request, HttpServletResponse response, AuthenticationException authException) throws IOException, ServletException {
+        response.sendError(HttpServletResponse.SC_UNAUTHORIZED);
+    }
+}

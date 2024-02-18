@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f5c6a41ff54f35011e303402d56c88de1a2729853e39e9882a0649c5ca166c86
-size 595
+import React from 'react';
+import styles from './loading.module.css';
+
+const CircularLoading3D: React.FC = () => {
+  const loadingText = "Loading...".split('');
+
+  return (
+    <div className={styles.loadingContainer}>
+      <div className={styles.circular3D}>
+        {loadingText.map((letter, index) => (
+          <div key={index} className={styles.letter3D} style={{
+            transform: `rotateY(${index * (360 / loadingText.length)}deg) translateZ(100px)`
+          }}>
+            {letter}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default CircularLoading3D;

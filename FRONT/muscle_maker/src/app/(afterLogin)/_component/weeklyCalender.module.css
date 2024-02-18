@@ -1,3 +1,127 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e9846dfd93190e33b96e564be673723ccc01e6d04ef3520b6a2dfed99b2f6100
-size 2651
+/* weeklyCalender.module.css */
+
+.top {
+  margin: 10px;
+}
+
+.weeklyCalendar {
+  margin-top: 17px;
+  margin-left : 6px;
+  margin-right : 6px;
+  text-align: center;
+  background-color: white; /* 밝은 배경색 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+  border-radius: 10px; /* 둥근 모서리 */
+  margin-bottom: 20px; /* 하단 여백 추가 */
+}
+
+.daysContainer {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  border : 0px;
+  padding: 10px;
+
+  background-color: transparent; /* 배경색 변경 */
+}
+
+.day {
+  padding: 10px;
+  min-width: 30px; /* 최소 너비 조정 */
+  min-height: 30px; /* 최소 높이 조정 */
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border: 0px;
+  border-radius: 4px;
+  background-color: transparent;
+  margin-left : 0px;
+  margin-right: 0px;
+  margin-top : 10px;
+}
+
+.day:hover {
+  background-color: #e0e0e0;
+}
+
+/* CSS 모듈에 추가 */
+.selected {
+  padding: 10px;
+  min-width: 30px; /* 최소 너비 조정 */
+  min-height: 30px; /* 최소 높이 조정 */
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border: 0px;
+  border-radius: 4px;
+  background-color: transparent;
+  margin-left : 0px;
+  margin-right: 0px;
+  margin-top : 10px;
+  color : gray;
+  font-weight: bold;
+}
+
+.today {
+  padding: 10px;
+  min-width: 30px; /* 최소 너비 조정 */
+  min-height: 30px; /* 최소 높이 조정 */
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border: 0px;
+  border-radius: 4px;
+  background-color: transparent;
+  margin-left : 0px;
+  margin-right: 0px;
+  margin-top : 10px;
+  color : gray;
+  font-weight: bold;
+}
+
+.table {
+  /* margin: 10px; 
+  */
+  margin-left : 18px;
+  width: 96%;
+  border-collapse: collapse;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 그림자 효과 추가 */
+  border-radius: 10px; /* 둥근 모서리 */
+  overflow: hidden; /* 둥근 모서리와 함께 overflow 처리 */
+}
+
+.circle{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border : none;
+  background-color : rgb(29, 155, 240, 0.4);
+  position : absolute;
+  left : 39px;
+  top : -5px;
+}
+
+.th,
+.td {
+  padding: 12px 15px;
+  text-align: center;
+  font-weight: normal;
+  border: 1px solid #ddd;
+  background-color: #fafafa;
+}
+
+.th {
+  background-color: #f3f3f3; /* 인스타그램의 밝은 배경 색상 */
+  color: #333; /* 진한 글씨 색상 */
+  font-weight: bold;
+}
+
+.tr:nth-child(even) {
+  background-color: #f0f0f0; /* 조금 더 어두운 배경색으로 줄 간격 표시 */
+}
+
+.button{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}

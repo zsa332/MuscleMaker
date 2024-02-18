@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bba4acf156098fefe343bcd7c45e27ef30796138abf7e15be515c9953a69b979
-size 783
+"use client";
+import style from "./tab.module.css";
+import { useContext } from "react";
+import { TabContext } from "./TabProvider";
+
+export default function Tab() {
+  const { tab, setTab } = useContext(TabContext);
+  const onClickRec = () => {
+    setTab("rec");
+  };
+  const onClickFol = () => {
+    setTab("fol");
+  };
+  return (
+    <div className={style.homeFixed}>
+      <div className={style.homeText}>&nbsp;</div>
+      <div className={style.homeTab}>
+        <div onClick={onClickRec}>
+          추천
+          <div className={style.tabIndicator} hidden={tab === "fol"}></div>
+        </div>
+        <div onClick={onClickFol}>
+          팔로우 중
+          <div className={style.tabIndicator} hidden={tab === "rec"}></div>
+        </div>
+      </div>
+    </div>
+  );
+}
